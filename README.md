@@ -4,9 +4,11 @@
 1. [Probability Definition: Events, Sample Points and Sequencing Events Techniques](#probability-definition)
 2. [How to calculate probability: Combinations, Permutations, Cardinality](#how-to-calculate-probability)
 3. [Random Variables: Discrete and Continuous (pmf, CDF functions)](#discrete-random-variables)
-4. [Probability Distributions: Binomial](#binomial-probability-distribution)
-5. [Probability Distributions: Hypergeometric](#hypergeometric-probability-distribution)
-6. [Probability Distributions: Negative Binomial](#negative-binomial-distribution)
+4. [TODO Expected Value][#]
+5. [Probability Distributions: Binomial](#binomial-probability-distribution)
+6. [TODO Probability Distributions: Geometric](#geometric-probability-distribution)
+7. [Probability Distributions: Hypergeometric](#hypergeometric-probability-distribution)
+8. [Probability Distributions: Negative Binomial](#negative-binomial-distribution)
 
 ##  Probability Definition
 
@@ -77,6 +79,10 @@ the pmf represented by:
 $b(x; n, p) = {n \choose x}p^x(1-p)^{n-x}$
 
 for $x = 0,1,2....$ (and $0$ otherwise).
+
+## Geometric Probability Distribution
+
+TODO - wrt Wackerly
 
 ## Hypergeometric Probability Distribution
 

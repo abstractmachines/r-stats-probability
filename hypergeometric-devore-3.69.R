@@ -12,11 +12,11 @@ r <- 7
 n <- 6
 
 # Calculate P(Y = 4).
-# dhyper gives the DENSITY. Also known as pmf, probability mass function.
+# dhyper gives the DENSITY.
 prob_4 <- dhyper(x = 4, r, N-r, n)
 
 # Calculate P(Y <= 4).
-# phyper gives the distribution function. Also known as CDF.
+# phyper gives the distribution function.
 prob_less_equal_4 <- phyper(4, r, N-r, n)
 
 print(prob_4) # 0.3787879

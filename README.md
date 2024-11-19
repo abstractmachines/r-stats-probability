@@ -52,11 +52,15 @@ Examples: Out of the set `S= {A, B, C}`, a combination set would include `AAA`, 
 
 ## Discrete Random Variables
 
-TODO
+TODO - in progress, as this coursework does NOT cover this material to satisfaction.
 
-> pmf
+> pmf: Probability "mass" function
 
-TODO
+A pmf measures the scalar value of a discrete variable, and a PDF (probability density function) measures the probability that a continuous random variable will have a certain range.
+
+Note in R, the "density function," invoked via `dhyper(y, r, N-r, n)`, this function measures a discrete random variable's scalar value, such as our hypergeometric example in R;
+
+Also in R, the "probability distribution function" is invoked via `phyper(4, r, N-r, n)`.
 
 > CDF 
 

@@ -20,7 +20,7 @@ $$\frac{|E|}{|S|}$$
 
 ## Probability Technique: Sample Points
 
-The Wackerly probability book is great, and describes the sample-point method for calculating probability. 
+The Wackerly probability book is great, and describes the sample-point method for calculating probability.
 
 ## Probability Technique: Sequenced Events
 
@@ -61,3 +61,31 @@ TODO
 > CDF 
 
 TODO
+
+## Binomial Probability Distribution
+
+To be continued when there is more time :) Essentially, repeated uniform experiments of a series of failures and successes, for example $\{F,F,F,F,S,F,S,F...\}$; the random variable for the binomial distribution counts the number of successes in each trial.
+
+Using the binomial probability distribution formula, we know that for $n$ trials, 
+
+the pmf represented by:
+
+$b(x; n, p) = {n \choose x}p^x(1-p)^{n-x}$
+
+for $x = 0,1,2....$ (and $0$ otherwise).
+
+## Hypergeometric Probability Distribution
+
+For random sampling of sample size $n$ without replacement on a finite population of size $N$, particularly in cases where the sample size approaches the population size.
+
+The denominator: counting the number of ways to select a subset of $n$ elements from a population of $N$, or, $N$ choose $n$ for the denominator e.g. sample space.
+
+Then for the numerator, we think of $n$ objects, $r$ of which are red, and $N-r$ of which are black. Then, choosing $y$ objects from $r$ and then remaining $n-y$ objects from remaining $N-r$, such that by the $mn$ rule we have $mn = {r \choose y}  {N-r \choose n -y}$. Putting this all together, we have:
+
+$$p(y) = h(y; n,r,N) = \dfrac{{r \choose y}{N-r \choose n-y}}{{N \choose n}}$$
+
+## Negative Binomial Distribution
+
+Either counting the number of failures, or counting the $r$th trial where the first success occurs.
+
+TODO 

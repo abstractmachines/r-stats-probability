@@ -4,7 +4,7 @@
 1. [Probability Definition: Events, Sample Points and Sequencing Events Techniques](#probability-definition)
 2. [How to calculate probability: Combinations, Permutations, Cardinality](#how-to-calculate-probability)
 3. [Random Variables: Discrete and Continuous (pmf, CDF functions)](#discrete-random-variables)
-4. [TODO Expected Value][#]
+4. [TODO Expected Value, Variance, Standard Deviation][#]
 5. [Probability Distributions: Binomial](#binomial-probability-distribution)
 6. [TODO Probability Distributions: Geometric](#geometric-probability-distribution)
 7. [Probability Distributions: Hypergeometric](#hypergeometric-probability-distribution)
@@ -68,9 +68,19 @@ Also in R, the "probability distribution function" is invoked via `phyper(4, r, 
 
 TODO
 
+## Expected Value, Variance, Standard Deviation
+
+> Expected Value: TODO
+
+> Variance: TODO
+
+> Standard Deviation: TODO
+
 ## Binomial Probability Distribution
 
 To be continued when there is more time :) Essentially, repeated uniform experiments of a series of failures and successes, for example $\{F,F,F,F,S,F,S,F...\}$; the random variable for the binomial distribution counts the number of successes in each trial.
+
+> Distribution:
 
 Using the binomial probability distribution formula, we know that for $n$ trials, 
 
@@ -80,11 +90,19 @@ $b(x; n, p) = {n \choose x}p^x(1-p)^{n-x}$
 
 for $x = 0,1,2....$ (and $0$ otherwise).
 
+> Mean, Variance (TODO):
+
 ## Geometric Probability Distribution
 
 TODO - wrt Wackerly
 
+> Distribution (TODO)
+
+> Mean, Variance (TODO)
+
 ## Hypergeometric Probability Distribution
+
+> Distribution:
 
 For random sampling of sample size $n$ without replacement on a finite population of size $N$, particularly in cases where the sample size approaches the population size.
 
@@ -94,8 +112,12 @@ Then for the numerator, we think of $n$ objects, $r$ of which are red, and $N-r$
 
 $$p(y) = h(y; n,r,N) = \dfrac{{r \choose y}{N-r \choose n-y}}{{N \choose n}}$$
 
+> Mean, Variance (TODO):
+
 ## Negative Binomial Distribution
 
 Either counting the number of failures, or counting the $r$th trial where the first success occurs.
 
-TODO 
+> Distribution (TODO):
+
+> Mean, Variance (TODO):

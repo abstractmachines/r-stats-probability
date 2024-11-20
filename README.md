@@ -9,6 +9,7 @@
 6. [TODO Probability Distributions: Geometric](#geometric-probability-distribution)
 7. [Probability Distributions: Hypergeometric](#hypergeometric-probability-distribution)
 8. [Probability Distributions: Negative Binomial](#negative-binomial-distribution)
+9. [Probability Distributions: Poisson](#poisson-distribution)
 
 ##  Probability Definition
 
@@ -123,3 +124,10 @@ Either counting the number of failures, or counting the $r$th trial where the fi
 > Distribution (TODO):
 
 > Mean, Variance (TODO):
+
+## Poisson Distribution
+
+The Poisson probability distribution, used for rare events over a period of time, is also used to approximate the binomial distribution since the binomial distribution converges to the Poisson distribution. The Poisson distribution can approximate the binomial distribution in use cases for: large $N$, small $p$, and $\lambda = np \leq \approx 7$.
+
+The Poisson distribution's probability function is $p(y) = \dfrac{\lambda^y}{y!}e^{-y}$, with $\mu = \lambda$, $\sigma^2 = \lambda$, and hence $\sigma = \sqrt{\lambda}$.
+

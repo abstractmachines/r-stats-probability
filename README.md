@@ -12,7 +12,9 @@ and other important concepts of combinatorics and statistics.
 # Table of Contents
 1. [Probability Definition: Events, Sample Points and Sequencing Events Techniques](#probability-definition)
 2. [How to calculate probability: Combinations, Permutations, Cardinality](#how-to-calculate-probability)
-3. [Random Variables: Discrete and Continuous (pmf, CDF functions)](#discrete-random-variables)
+3. [Discrete Random Variables](#discrete-random-variables)
+4. [Continuous Random Variables](#continuous-random-variables)
+5. [Probability Distributions "Distribution Functions" for all types of variables](#distribution-functions---or-cumulative-distributions---are-for-any-type-of-variable)
 4. [TODO Expected Value, Variance, Standard Deviation, Quartiles][#]
 5. [Probability Distributions: Binomial](#binomial-probability-distribution)
 6. [TODO Probability Distributions: Geometric](#geometric-probability-distribution)
@@ -64,6 +66,8 @@ Examples: Out of the set `S= {A, B, C}`, a combination set would include `AAA`, 
 
 ## Discrete Random Variables
 
+Scalar, discrete values of probability. Stepwise functions. Best described via pmf.
+
 > pmf: Probability "mass" function
 
 A pmf measures the scalar value of a discrete variable; the probability that a discrete random variable has a particular value.
@@ -77,7 +81,20 @@ Probability mass functions will depend on the particular problem you're trying t
 1. Each possible value of the random variable must be assigned a nonzero probability;
 2. All of the probabilities must sum to a total probability of `1`.
 
-> Distribution functions, e.g. Cumulative Distribution Functions (CDF)
+## Continuous Random Variables
+
+Continuous random variables are defined on a continuum, e.g. an interval.
+
+Take the real number line $x \in \mathbb{R}$. We know from Real Analysis that there are infinite possibilities,
+either countably infinite or uncountably infinite, in an interval on this line.
+
+> Hence, axioms of probability for continuous variables cannot be similar to those of discrete.
+- If each possible value of the random variable must be assigned a probability,
+- And each possible value is a subset of an infinite set within an interval,
+- Then the probabilities cannot all sum to 1, as they are infinite.
+- Therefore a new set of axioms for continuous random variables must be defined, as follows.
+
+## Distribution functions - or Cumulative Distributions - are for any type of variable
 
 From Wackerly 4.2, this is an important note about the definition of distribution functions,
 because _distribution functions, e.g. cumulative distributions or probability distributions,
@@ -87,7 +104,9 @@ can be for ANY random variable, whether discrete or continuous:_
 
 >> Let `Y` denote any random variable. Then, `F(y) = P(Y <= y)`, for example, `P(Y <= 2)`.
 
+>> The *nature* of the distribution function associated with a random variable, determines whether the variable is discrete or continuous.
 
+- Discrete random variables have a stepwise function.
 
 > Semantics and Idioms of `R` language for probability distributions:
 Considered separate from pure mathematical theory.

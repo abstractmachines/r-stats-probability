@@ -64,17 +64,33 @@ Examples: Out of the set `S= {A, B, C}`, a combination set would include `AAA`, 
 
 ## Discrete Random Variables
 
-TODO - in progress, as this coursework does NOT cover this material to satisfaction.
-
 > pmf: Probability "mass" function
 
-A pmf measures the scalar value of a discrete variable, and a PDF (probability density function) measures the probability that a continuous random variable will have a certain range.
+A pmf measures the scalar value of a discrete variable; the probability that a discrete random variable has a particular value.
+
+This could be denoted as `P(Y = y)`, or more concretely, `P(Y = 1)` for example.
+
+Probability mass functions will depend on the particular problem you're trying to solve.
+
+> Axioms of pmf's and discrete random variable probabilities:
+
+1. Each possible value of the random variable must be assigned a nonzero probability;
+2. All of the probabilities must sum to a total probability of `1`.
+
+> Distribution functions, e.g. Cumulative Distribution Functions (CDF)
+
+From Wackerly 4.2, this is an important note about the definitionw of distribution functions,
+because _distribution functions, e.g. cumulative distributions or probability distributions,
+can be for ANY random variable, whether discrete or continuous:_
+
+>> "Before we can state a formal definition for a continuous random variable, we must define the distribution function (or cumulative distribution function) associated with a random variable."
+
+>> Let `Y` denote any random variable. Then, `F(y) = P(Y <= y)`, for example, `P(Y <= 2)`.
 
 Note in R, the "density function," invoked via `dhyper(y, r, N-r, n)`, this function measures a discrete random variable's scalar value, such as our hypergeometric example in R; there's a bit of oddness here, since we've used this function for _discrete_ random variables.
 
 Also in R, the "probability distribution function" is invoked via `phyper(4, r, N-r, n)`.
 
-> CDF 
 
 TODO
 

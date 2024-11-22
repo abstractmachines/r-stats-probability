@@ -1,5 +1,14 @@
 # RStudio projects for probability and statistics
 
+Source(s):
+
+Most of this material is derived from _"Mathematical Statistics"_ by Wackerly.
+
+Some of this material is also derived from _"Probability and Statistics for Engineering and the Sciences"_, by Jay Devore, but to a much lesser degree.
+
+The Wackerly book has more formulas (instead of tables), introductions to the mn rule,
+and other important concepts of combinatorics and statistics.
+
 # Table of Contents
 1. [Probability Definition: Events, Sample Points and Sequencing Events Techniques](#probability-definition)
 2. [How to calculate probability: Combinations, Permutations, Cardinality](#how-to-calculate-probability)

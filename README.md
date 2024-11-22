@@ -95,8 +95,6 @@ Note in R, the "density function," invoked via `dhyper(y, r, N-r, n)`, this func
 Also in R, the "probability distribution function" is invoked via `phyper(4, r, N-r, n)`.
 
 
-TODO
-
 ## Expected Value, Variance, Standard Deviation, Quartiles
 
 > Expected Value: TODO

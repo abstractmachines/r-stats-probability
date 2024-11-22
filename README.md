@@ -79,13 +79,15 @@ Probability mass functions will depend on the particular problem you're trying t
 
 > Distribution functions, e.g. Cumulative Distribution Functions (CDF)
 
-From Wackerly 4.2, this is an important note about the definitionw of distribution functions,
+From Wackerly 4.2, this is an important note about the definition of distribution functions,
 because _distribution functions, e.g. cumulative distributions or probability distributions,
 can be for ANY random variable, whether discrete or continuous:_
 
 >> "Before we can state a formal definition for a continuous random variable, we must define the distribution function (or cumulative distribution function) associated with a random variable."
 
 >> Let `Y` denote any random variable. Then, `F(y) = P(Y <= y)`, for example, `P(Y <= 2)`.
+
+
 
 > Semantics and Idioms of `R` language for probability distributions:
 Considered separate from pure mathematical theory.

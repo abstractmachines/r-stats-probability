@@ -87,6 +87,9 @@ can be for ANY random variable, whether discrete or continuous:_
 
 >> Let `Y` denote any random variable. Then, `F(y) = P(Y <= y)`, for example, `P(Y <= 2)`.
 
+> Semantics and Idioms of `R` language for probability distributions:
+Considered separate from pure mathematical theory.
+
 Note in R, the "density function," invoked via `dhyper(y, r, N-r, n)`, this function measures a discrete random variable's scalar value, such as our hypergeometric example in R; there's a bit of oddness here, since we've used this function for _discrete_ random variables.
 
 Also in R, the "probability distribution function" is invoked via `phyper(4, r, N-r, n)`.

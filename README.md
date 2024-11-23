@@ -208,9 +208,20 @@ Also in R, the "probability distribution function" is invoked via `phyper(4, r, 
 
 > _And a preparation for density functions in probability._
 
+_Note: This is often considered grad-student level Real Analysis work, and the real numbers
+can arguably be constructed in various ways; the Dedekind cuts are merely my personal favorite._
+
+_I ran across this material with Jay Cummings' _Real Analysis_ book,
+this is a book that's \$20 on Amazon and used by the Wrath of Math (excellent Youtube math channel)._
+
+_If you'd prefer to have a social life, you can skip this section, but frankly, without density 
+in Real Analysis, density functions in probability are a bit nonsensical to me._
+
 Recall Real Analysis, and that the real numbers can be constructed via Dedekind cuts of 
 rational numbers [link](https://en.wikipedia.org/wiki/Construction_of_the_real_numbers); recall that
 "rationals are dense in the reals," [stack exchange](https://math.stackexchange.com/questions/1027970/what-does-it-mean-for-rational-numbers-to-be-dense-in-the-reals), Wikipedia dense set and topology [here](https://en.wikipedia.org/wiki/Dense_set).
+
+We could also say "density of $\mathbb{Q} \in \mathbb{R}$."
 
 Basically, there are a lot of "density" discussions with the real numbers, as such.
 
@@ -228,6 +239,3 @@ So, that's what "density" is: take an interval on the real number line,
 subdivide it quite a lot into infinite subdivisions,
 and hey, that's "dense."
 
-
-
-Continuous variables are analyzed on an _interval_.

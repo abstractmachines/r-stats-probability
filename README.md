@@ -186,6 +186,9 @@ can be for ANY random variable, whether discrete or continuous:_
 
 ### Axioms of continuous RV distributions
 
+- Variables are continuous if their distributions are, and, lots of real analysis continuity stuff,
+regarding "absolute continuity." More importantly,
+
 - For a continuous random variable `Y`, then $\forall y \in \mathbb{R}, P(Y = y) = 0$,
 that is,
 
@@ -193,7 +196,6 @@ that is,
 
 Wackerly uses the example of daily rainfall; probability of exactly 2.312 inches, a discrete point, is quite unlikely;
 probability of between 2 and 3 inches is quite likely; an interval.
-
 
 > Semantics and Idioms of `R` language for probability distributions:
 Considered separate from pure mathematical theory.

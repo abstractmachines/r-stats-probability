@@ -107,6 +107,18 @@ can be for ANY random variable, whether discrete or continuous:_
 >> The *nature* of the distribution function associated with a random variable, determines whether the variable is discrete or continuous.
 
 - Discrete random variables have a stepwise function.
+- Continuous random variables have a continuous function.
+
+### Axioms of continuous RV distributions
+
+- For a continuous random variable `Y`, then $\forall y \in \mathbb{R}, P(Y = y) = 0$,
+that is,
+
+> Continuous random variables have a zero probability at discrete points.
+
+Wackerly uses the example of daily rainfall; probability of exactly 2.312 inches, a discrete point, is quite unlikely;
+probability of between 2 and 3 inches is quite likely; an interval.
+
 
 > Semantics and Idioms of `R` language for probability distributions:
 Considered separate from pure mathematical theory.

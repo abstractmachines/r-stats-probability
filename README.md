@@ -21,7 +21,7 @@ and other important concepts of combinatorics and statistics.
 9. [Discrete Probability Distributions: Poisson](#poisson-distribution)
 10. [Continuous Random Variables](#continuous-random-variables)
 11. [Probability Distributions "Distribution Functions" for all types of variables](#distribution-functions---or-cumulative-distributions---are-for-any-type-of-variable)
-12. [What is Density? A Mathematician's Perspective](#)
+12. [What is Density? A Mathematician's Perspective (and prep for Density Functions)](#what-is-density-a-mathematicians-perspective)
 13. [The Density Function: PDFs]
 
 ##  Probability Definition
@@ -203,3 +203,31 @@ Considered separate from pure mathematical theory.
 Note in R, the "density function," invoked via `dhyper(y, r, N-r, n)`, this function measures a discrete random variable's scalar value, such as our hypergeometric example in R; there's a bit of oddness here, since we've used this function for _discrete_ random variables.
 
 Also in R, the "probability distribution function" is invoked via `phyper(4, r, N-r, n)`.
+
+## What Is Density? A Mathematician's Perspective
+
+> _And a preparation for density functions in probability._
+
+Recall Real Analysis, and that the real numbers can be constructed via Dedekind cuts of 
+rational numbers [link](https://en.wikipedia.org/wiki/Construction_of_the_real_numbers); recall that
+"rationals are dense in the reals," [stack exchange](https://math.stackexchange.com/questions/1027970/what-does-it-mean-for-rational-numbers-to-be-dense-in-the-reals), Wikipedia dense set and topology [here](https://en.wikipedia.org/wiki/Dense_set).
+
+Basically, there are a lot of "density" discussions with the real numbers, as such.
+
+Take any interval on the real number line. "Subdivide" that interval into many "subdivisions."
+
+There are "infinite" real numbers, or subdivisions, in that interval (arguably countable or uncountable).
+
+The big picture is, they're infinite, or close enough to infinite that it doesn't matter.
+
+This is what "density" looks like. (The articles above are about this, regarding the real numbers,
+as well as rational and irrational numbers, and constructing the real number line from a hybrid
+of rational and irrational numbers like Dedekind, which is very fun Real Analysis stuff).
+
+So, that's what "density" is: take an interval on the real number line,
+subdivide it quite a lot into infinite subdivisions,
+and hey, that's "dense."
+
+
+
+Continuous variables are analyzed on an _interval_.

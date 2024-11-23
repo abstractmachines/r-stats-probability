@@ -12,7 +12,7 @@ and other important concepts of combinatorics and statistics.
 # Table of Contents
 1. [Probability Definition: Events, Sample Points and Sequencing Events Techniques](#probability-definition)
 2. [How to calculate probability: Combinations, Permutations, Cardinality](#how-to-calculate-probability)
-3. [TODO Expected Value, Variance, Standard Deviation, Quartiles][#]
+3. [Expected Value, Variance, Standard Deviation, Quartiles](#expected-value-variance-standard-deviation-quartiles)
 4. [Discrete Random Variables](#discrete-random-variables)
 5. [Discrete Probability Distributions: Binomial](#binomial-probability-distribution)
 6. [TODO Discrete Probability Distributions: Geometric](#geometric-probability-distribution)
@@ -69,13 +69,23 @@ Examples: Out of the set `S= {A, B, C}`, a combination set would include `AAA`, 
 
 ## Expected Value, Variance, Standard Deviation, Quartiles
 
-> Expected Value: TODO
+> Expected Value, $\mu$ or $E[Y]$: The average
 
-> Variance: TODO
+Expected value or mean is a calculation whose computation will differ depending on the probability distribution technique.
 
-> Standard Deviation: TODO
+> Variance, $\sigma^2$: Dispersion From the Mean
 
-> Quartiles: TODO
+Variance is a measure of how far a set of numbers "spreads out" from the mean or average value.
+
+> Standard Deviation, $\sigma$: Amount of variance from the mean
+
+A low standard deviation means values are close to the mean, and high standard deviation, more distributed values.
+
+> Quartiles:
+
+A measure in statistics; we've heard "upper quartile", etc. There are three actual quartiles,
+first is 25th percentile, then 50th (median) and 75th; the four quartiles are just data 
+that fits around those quartiles.
 
 ## Discrete Random Variables
 

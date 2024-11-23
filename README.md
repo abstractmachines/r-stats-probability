@@ -12,15 +12,17 @@ and other important concepts of combinatorics and statistics.
 # Table of Contents
 1. [Probability Definition: Events, Sample Points and Sequencing Events Techniques](#probability-definition)
 2. [How to calculate probability: Combinations, Permutations, Cardinality](#how-to-calculate-probability)
-3. [Discrete Random Variables](#discrete-random-variables)
-4. [Continuous Random Variables](#continuous-random-variables)
-5. [Probability Distributions "Distribution Functions" for all types of variables](#distribution-functions---or-cumulative-distributions---are-for-any-type-of-variable)
-4. [TODO Expected Value, Variance, Standard Deviation, Quartiles][#]
-5. [Probability Distributions: Binomial](#binomial-probability-distribution)
-6. [TODO Probability Distributions: Geometric](#geometric-probability-distribution)
-7. [Probability Distributions: Hypergeometric](#hypergeometric-probability-distribution)
-8. [Probability Distributions: Negative Binomial](#negative-binomial-distribution)
-9. [Probability Distributions: Poisson](#poisson-distribution)
+3. [TODO Expected Value, Variance, Standard Deviation, Quartiles][#]
+4. [Discrete Random Variables](#discrete-random-variables)
+5. [Discrete Probability Distributions: Binomial](#binomial-probability-distribution)
+6. [TODO Discrete Probability Distributions: Geometric](#geometric-probability-distribution)
+7. [Discrete Probability Distributions: Hypergeometric](#hypergeometric-probability-distribution)
+8. [Discrete Probability Distributions: Negative Binomial](#negative-binomial-distribution)
+9. [Discrete Probability Distributions: Poisson](#poisson-distribution)
+10. [Continuous Random Variables](#continuous-random-variables)
+11. [Probability Distributions "Distribution Functions" for all types of variables](#distribution-functions---or-cumulative-distributions---are-for-any-type-of-variable)
+12. [What is Density? A Mathematician's Perspective](#)
+13. [The Density Function: PDFs]
 
 ##  Probability Definition
 
@@ -64,6 +66,17 @@ Examples: Out of the set `S= {A, B, C}`, a combination set would include `AAA`, 
 
 [Cardinality](https://en.wikipedia.org/wiki/Cardinality) is the number of elements in a Set.
 
+
+## Expected Value, Variance, Standard Deviation, Quartiles
+
+> Expected Value: TODO
+
+> Variance: TODO
+
+> Standard Deviation: TODO
+
+> Quartiles: TODO
+
 ## Discrete Random Variables
 
 Scalar, discrete values of probability. Stepwise functions. Best described via pmf.
@@ -80,63 +93,6 @@ Probability mass functions will depend on the particular problem you're trying t
 
 1. Each possible value of the random variable must be assigned a nonzero probability;
 2. All of the probabilities must sum to a total probability of `1`.
-
-## Continuous Random Variables
-
-Continuous random variables are defined on a continuum, e.g. an interval.
-
-Take the real number line $x \in \mathbb{R}$. We know from Real Analysis that there are infinite possibilities,
-either countably infinite or uncountably infinite, in an interval on this line.
-
-> Hence, axioms of probability for continuous variables cannot be similar to those of discrete.
-- If each possible value of the random variable must be assigned a probability,
-- And each possible value is a subset of an infinite set within an interval,
-- Then the probabilities cannot all sum to 1, as they are infinite.
-- Therefore a new set of axioms for continuous random variables must be defined, as follows.
-
-## Distribution functions - or Cumulative Distributions - are for any type of variable
-
-From Wackerly 4.2, this is an important note about the definition of distribution functions,
-because _distribution functions, e.g. cumulative distributions or probability distributions,
-can be for ANY random variable, whether discrete or continuous:_
-
->> "Before we can state a formal definition for a continuous random variable, we must define the distribution function (or cumulative distribution function) associated with a random variable."
-
->> Let `Y` denote any random variable. Then, `F(y) = P(Y <= y)`, for example, `P(Y <= 2)`.
-
->> The *nature* of the distribution function associated with a random variable, determines whether the variable is discrete or continuous.
-
-- Discrete random variables have a stepwise function.
-- Continuous random variables have a continuous function.
-
-### Axioms of continuous RV distributions
-
-- For a continuous random variable `Y`, then $\forall y \in \mathbb{R}, P(Y = y) = 0$,
-that is,
-
-> Continuous random variables have a zero probability at discrete points.
-
-Wackerly uses the example of daily rainfall; probability of exactly 2.312 inches, a discrete point, is quite unlikely;
-probability of between 2 and 3 inches is quite likely; an interval.
-
-
-> Semantics and Idioms of `R` language for probability distributions:
-Considered separate from pure mathematical theory.
-
-Note in R, the "density function," invoked via `dhyper(y, r, N-r, n)`, this function measures a discrete random variable's scalar value, such as our hypergeometric example in R; there's a bit of oddness here, since we've used this function for _discrete_ random variables.
-
-Also in R, the "probability distribution function" is invoked via `phyper(4, r, N-r, n)`.
-
-
-## Expected Value, Variance, Standard Deviation, Quartiles
-
-> Expected Value: TODO
-
-> Variance: TODO
-
-> Standard Deviation: TODO
-
-> Quartiles: TODO
 
 ## Binomial Probability Distribution
 
@@ -190,3 +146,48 @@ The Poisson probability distribution, used for rare events over a period of time
 
 The Poisson distribution's probability function is $p(y) = \dfrac{\lambda^y}{y!}e^{-y}$, with $\mu = \lambda$, $\sigma^2 = \lambda$, and hence $\sigma = \sqrt{\lambda}$.
 
+## Continuous Random Variables
+
+Continuous random variables are defined on a continuum, e.g. an interval.
+
+Take the real number line $x \in \mathbb{R}$. We know from Real Analysis that there are infinite possibilities,
+either countably infinite or uncountably infinite, in an interval on this line.
+
+> Hence, axioms of probability for continuous variables cannot be similar to those of discrete.
+- If each possible value of the random variable must be assigned a probability,
+- And each possible value is a subset of an infinite set within an interval,
+- Then the probabilities cannot all sum to 1, as they are infinite.
+- Therefore a new set of axioms for continuous random variables must be defined, as follows.
+
+## Distribution functions - or Cumulative Distributions - are for any type of variable
+
+From Wackerly 4.2, this is an important note about the definition of distribution functions,
+because _distribution functions, e.g. cumulative distributions or probability distributions,
+can be for ANY random variable, whether discrete or continuous:_
+
+>> "Before we can state a formal definition for a continuous random variable, we must define the distribution function (or cumulative distribution function) associated with a random variable."
+
+>> Let `Y` denote any random variable. Then, `F(y) = P(Y <= y)`, for example, `P(Y <= 2)`.
+
+>> The *nature* of the distribution function associated with a random variable, determines whether the variable is discrete or continuous.
+
+- Discrete random variables have a stepwise function.
+- Continuous random variables have a continuous function.
+
+### Axioms of continuous RV distributions
+
+- For a continuous random variable `Y`, then $\forall y \in \mathbb{R}, P(Y = y) = 0$,
+that is,
+
+> Continuous random variables have a zero probability at discrete points.
+
+Wackerly uses the example of daily rainfall; probability of exactly 2.312 inches, a discrete point, is quite unlikely;
+probability of between 2 and 3 inches is quite likely; an interval.
+
+
+> Semantics and Idioms of `R` language for probability distributions:
+Considered separate from pure mathematical theory.
+
+Note in R, the "density function," invoked via `dhyper(y, r, N-r, n)`, this function measures a discrete random variable's scalar value, such as our hypergeometric example in R; there's a bit of oddness here, since we've used this function for _discrete_ random variables.
+
+Also in R, the "probability distribution function" is invoked via `phyper(4, r, N-r, n)`.

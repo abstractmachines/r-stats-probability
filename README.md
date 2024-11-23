@@ -187,10 +187,6 @@ can be for ANY random variable, whether discrete or continuous:_
 
 ### Axioms of continuous RV distributions
 
-- Continuous variables have a "smooth curve" graph that looks like a histogram, or a 
-result of Riemann sums. The _total area under the curve) from $(-\infty, \infty) = 1$.
-This axiom is analogous to the discrete RV's having all probabilities sum to 1 discretely.
-
 - Variables are continuous if their distributions are, and, lots of real analysis continuity stuff,
 regarding "absolute continuity." More importantly,
 
@@ -273,3 +269,22 @@ random variable would be close to one sample compared to the other sample." [wik
 
 That is, the probability that the continuous random variable is within an interval,
 is the area under the curve of the density function between $a$ and $b$.
+
+> PDF Axioms:
+
+1. The _total area under the curve of $f(x)$, from $(-\infty, \infty) = 1$:_
+
+That is, $\int_{-\infty}^{\infty} f(x) dx = 1.$
+
+Continuous variables have a "smooth curve" graph $f(x)$ that looks like the 
+result of a histogram, or a result of Riemann sums.
+
+This axiom is analogous to the discrete RV's having all probabilities sum to 1 discretely.
+
+2. $f(x) \geq 0, \forall x$. All probabilities of the PDF function are positive.
+
+> Uniform Distributions
+
+Uniform Distributions look like a "block", often.
+
+PDF of uniform distributions is $f(y; A,B) = \dfrac{1}{B-A}$ between A, B; 0 otherwise.

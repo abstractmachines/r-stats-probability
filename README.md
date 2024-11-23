@@ -22,7 +22,7 @@ and other important concepts of combinatorics and statistics.
 10. [Continuous Random Variables](#continuous-random-variables)
 11. [Probability Distributions "Distribution Functions" for all types of variables](#distribution-functions---or-cumulative-distributions---are-for-any-type-of-variable)
 12. [What is Density? A Mathematician's Perspective (and prep for Density Functions)](#what-is-density-a-mathematicians-perspective)
-13. [The Density Function: PDFs]
+13. [Probability Density Functions: PDF](#probabilty-density-functions)
 
 ##  Probability Definition
 
@@ -183,8 +183,13 @@ can be for ANY random variable, whether discrete or continuous:_
 
 - Discrete random variables have a stepwise function.
 - Continuous random variables have a continuous function.
+- Continuous random variables have a smooth curve graph that is the result of histograms, or Riemann summations.
 
 ### Axioms of continuous RV distributions
+
+- Continuous variables have a "smooth curve" graph that looks like a histogram, or a 
+result of Riemann sums. The _total area under the curve) from $(-\infty, \infty) = 1$.
+This axiom is analogous to the discrete RV's having all probabilities sum to 1 discretely.
 
 - Variables are continuous if their distributions are, and, lots of real analysis continuity stuff,
 regarding "absolute continuity." More importantly,
@@ -239,3 +244,32 @@ So, that's what "density" is: take an interval on the real number line,
 subdivide it quite a lot into infinite subdivisions,
 and hey, that's "dense."
 
+## Probabilty Density Functions
+
+Continuous variables are analyzed on an _interval_, so we care about _density_ in that interval, as the previous section discusses.
+
+> PDF: Probability Density Function
+
+A PDF is a function that provides a "likelihood" that a continuous random variable's
+value is _close to_ that of the value of a sample, or multiple samples.
+
+For more on PDFs, see
+[Wikipedia PDF article](https://en.wikipedia.org/wiki/Probability_density_function).
+
+> Probability density: Probability per unit length that RV is _near_ one or more samples.
+
+**Probability density is** the probability per unit length, while the absolute likelihood 
+for a continuous random variable to take on any particular value is 0 
+(since there is an infinite set of possible values to begin with), 
+the value of the PDF at two different samples can be used to infer, 
+in any particular draw of the random variable, how much more likely it is that the 
+random variable would be close to one sample compared to the other sample." [wikipedia](https://en.wikipedia.org/wiki/Probability_density_function)
+
+> PDF formula: The PDF of continuous random var $Y$ is the function $f(y)$, such that
+
+> for interval $[a,b], a \leq b$,
+
+> $P(a \leq Y \leq b) = \int_a^b f(y) dy$. 
+
+That is, the probability that the continuous random variable is within an interval,
+is the area under the curve of the density function between $a$ and $b$.

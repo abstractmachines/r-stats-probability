@@ -288,3 +288,5 @@ This axiom is analogous to the discrete RV's having all probabilities sum to 1 d
 Uniform Distributions look like a "block", often.
 
 PDF of uniform distributions is $f(y; A,B) = \dfrac{1}{B-A}$ between A, B; 0 otherwise.
+
+In the uniform distribution, the probability over a subinterval is proportional to the length of that subinterval

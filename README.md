@@ -93,6 +93,15 @@ that fits around those quartiles.
 
 $E(Y) = \mu_y = \sum y* p(y)$
 
+> Variance of a Discrete Random Variable, $\sigma^2$
+
+$V(Y) = \sigma^2_y = E[(Y - \mu)^2]$
+
+> Standard Deviation of a Discrete Random Variable, $\sigma$
+
+$\sigma = \sqrt{\sigma^2}$
+
+
 Scalar, discrete values of probability. Stepwise functions. Best described via pmf.
 
 > pmf: Probability "mass" function
@@ -298,3 +307,6 @@ In the uniform distribution, the probability over a subinterval is proportional 
 ## Expected Value: Continuous RV
 
 $E(Y) = \int_{-\infty}^{\infty} y * f(y) dy$
+
+## Cumulative Distribution Function (CDF)
+

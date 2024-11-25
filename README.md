@@ -186,7 +186,27 @@ Then for the numerator, we think of $n$ objects, $r$ of which are red, and $N-r$
 
 $$p(y) = h(y; n,r,N) = \dfrac{{r \choose y}{N-r \choose n-y}}{{N \choose n}}$$
 
-> Mean, Variance (TODO):
+> Mean, Variance, Std Deviation of Hypergeometric:
+
+$\mu = E(Y) = \dfrac{nr}{N}$
+
+$\sigma^2 = (\dfrac{nr}{N})(\dfrac{N-r}{N})(\dfrac{N-n}{N-1})$,
+
+Then if we define $p = \frac{r}{N}$ and $q = 1 - p = \frac{N-r}{N}$,
+
+$\sigma^2 = npq(\dfrac{N-n}{N-1})$, similarly to binomial random variable.
+
+Note the factor $\dfrac{N-n}{N-1}$, often called the _"finite population correction factor"_. 
+
+As $N \rightarrow \infty$, $\dfrac{N-n}{N-1} \rightarrow 1$.
+
+So for larger population sizes, the variance of the hypergeometric distribution is the same as binomial, e.g. $npq$.
+
+As $n \rightarrow N$, $\dfrac{N-n}{N-1} < 1$, so for more "finite" population sizes _where sample size approaches population size_,
+
+then obviously the hypergeometric distribution variance is smaller than that of the binomial distribution, as we'd have variance of $npq$ multiplied by a factor of less than 1.
+
+Having lesser variance can be a good thing, so we can see how the hypergeometric distribution is useful for cases where the sample size approaches the population size. "For sampling from a finite population" such as, quality control, genetic hypothesis testing, or statistical hypothesis testing.
 
 ## Negative Binomial Distribution
 

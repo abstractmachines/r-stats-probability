@@ -135,7 +135,11 @@ $b(x; n, p) = {n \choose x}p^xq^{n-x}$.
  
 for $x = 0,1,2....$ (and $0$ otherwise).
 
-> Mean, Variance (TODO):
+> Mean, Variance, Std Deviation of Binomial:
+
+$\mu = E(Y) = np$
+
+$\sigma^2 = npq$
 
 ## Geometric Probability Distribution
 

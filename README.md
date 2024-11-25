@@ -89,6 +89,10 @@ that fits around those quartiles.
 
 ## Discrete Random Variables
 
+> Expected Value or Mean of a Discrete Random Variable
+
+$E(Y) = \mu_y = \sum y* p(y)$
+
 Scalar, discrete values of probability. Stepwise functions. Best described via pmf.
 
 > pmf: Probability "mass" function

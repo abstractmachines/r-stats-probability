@@ -23,6 +23,8 @@ and other important concepts of combinatorics and statistics.
 11. [Probability Distributions "Distribution Functions" for all types of variables](#distribution-functions---or-cumulative-distributions---are-for-any-type-of-variable)
 12. [What is Density? A Mathematician's Perspective (and prep for Density Functions)](#what-is-density-a-mathematicians-perspective)
 13. [Probability Density Functions: PDF](#probabilty-density-functions)
+14. [Expected Value for a Continuous Random Variable](#expected-value-continuous-rv)
+15. [Cumulative Distribution Functions (CDFs)](#cumulative-distribution-function-cdf)
 
 ##  Probability Definition
 
@@ -342,6 +344,10 @@ In the uniform distribution, the probability over a subinterval is proportional 
 ## Expected Value: Continuous RV
 
 $E(Y) = \int_{-\infty}^{\infty} y * f(y) dy$
+
+Similarly, for $h(y)$, a function of $y$,
+
+$E[h(Y)] = \int_{-\infty}^{\infty} h(y) * f(y) dy$
 
 ## Cumulative Distribution Function (CDF)
 

@@ -188,9 +188,13 @@ $$p(y) = h(y; n,r,N) = \dfrac{{r \choose y}{N-r \choose n-y}}{{N \choose n}}$$
 
 ## Negative Binomial Distribution
 
-Either counting the number of failures, or counting the $r$th trial where the first success occurs.
+Recall the geometric distribution, which is finding the probability of the first success. The negative binomial distribution focuses on the use case for multiple successes occurring.
 
-> Distribution (TODO):
+Depending on the textbook you are using, this is either counting the number of failures, or counting the trial where the $r$th success occurs.
+
+> Distribution (TODO): (case 1, Wackerly)
+
+> Distribution (TODO): Case 2, Devore
 
 > Mean, Variance (TODO):
 

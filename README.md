@@ -294,3 +294,7 @@ Uniform Distributions look like a "block", often.
 PDF of uniform distributions is $f(y; A,B) = \dfrac{1}{B-A}$ between A, B; 0 otherwise.
 
 In the uniform distribution, the probability over a subinterval is proportional to the length of that subinterval
+
+## Expected Value: Continuous RV
+
+$E(Y) = \int_{-\infty}^{\infty} y * f(y) dy$

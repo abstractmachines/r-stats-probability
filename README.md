@@ -383,3 +383,9 @@ Then, $\forall a, P(X > a) = 1 - F(a)$, and
 
 $\forall a, b, a < b, P(a \leq X \leq b) = F(b) - F(a)$.
 
+
+> Relating PDF and CDF via fundamental theorem of calculus:
+
+If $X$ is a continuous random variable with PDF PDF $f(x)$ and CDF $F(x)$,
+
+Then, $\forall x$ where $F\prime(x)$ exists, $F\prime(x) = f(x)$.

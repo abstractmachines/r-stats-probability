@@ -310,7 +310,7 @@ So, that's what "density" is: take an interval on the real number line,
 subdivide it quite a lot into infinite subdivisions,
 and hey, that's "dense."
 
-## Probabilty Density Functions
+## Probability Density Functions
 
 Continuous variables are analyzed on an _interval_, so we care about _density_ in that interval, as the previous section discusses.
 

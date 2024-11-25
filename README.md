@@ -15,7 +15,7 @@ and other important concepts of combinatorics and statistics.
 3. [Expected Value, Variance, Standard Deviation, Quartiles](#expected-value-variance-standard-deviation-quartiles)
 4. [Discrete Random Variables](#discrete-random-variables)
 5. [Discrete Probability Distributions: Binomial](#binomial-probability-distribution)
-6. [TODO Discrete Probability Distributions: Geometric](#geometric-probability-distribution)
+6. [Discrete Probability Distributions: Geometric](#geometric-probability-distribution)
 7. [Discrete Probability Distributions: Hypergeometric](#hypergeometric-probability-distribution)
 8. [Discrete Probability Distributions: Negative Binomial](#negative-binomial-distribution)
 9. [Discrete Probability Distributions: Poisson](#poisson-distribution)
@@ -143,11 +143,34 @@ $\sigma^2 = npq$
 
 ## Geometric Probability Distribution
 
-TODO - wrt Wackerly
+The geometric probability distribution is built on the binomial distribution idea; that of a series of uniform trials occurring of successes and failures; the geometric distribution of a random variable is where value $y$ of the random variable $Y$, e.g. $P(Y=y)$, is the number of the trial in which the first success occurs.
 
-> Distribution (TODO)
+Looking at the sample space (Wackerly 3.5), we see that
 
-> Mean, Variance (TODO)
+$E_1: S$ with success on first trial;
+
+$E_2: FS$ with success on second trial;
+
+...
+
+$E_k: F, F, F .... S $ with success on $kth$ trial;
+
+where there are $k-1$ failures, and first $S$ on $kth$ trial.
+
+As such, $P(Y = y)$ is the probability that there will be $y-1$ failures, and trial number $y$ is the first success. If we let the failures be $q$, that means that there are $y-1$ $q$'s, and one $y$, which describes the geometric distribution below. 
+ 
+> Geometric Probability Distribution:
+
+$p(y) = q^{y-1}p$
+
+> Mean, Variance, Std Deviation of Geometric Distribution:
+
+$\mu = E[Y] = \dfrac{1}{p}$
+
+$\sigma^2 = \dfrac{1-p}{p^2}$.
+
+Proofs for these are in the Wackerly book chapter 3.5 and are interesting.
+
 
 ## Hypergeometric Probability Distribution
 

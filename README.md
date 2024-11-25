@@ -371,3 +371,15 @@ $E[h(Y)] = \int_{-\infty}^{\infty} h(y) * f(y) dy$
 
 ## Cumulative Distribution Function (CDF)
 
+The CDF for a continuous random variable $X$ is:
+
+$F(x) = P(X \leq x) = \int_{-\infty}^x f(y) dy$. For each $x$, $F(x)$ is the area under the density curve to the left of $x$.
+
+> Using $F(x) to compute probabilities:
+
+Let $X$ be a continuous random variable with PDF = $f(x)$, CDF = $F(x)$.
+
+Then, $\forall a, P(X > a) = 1 - F(a)$, and
+
+$\forall a, b, a < b, P(a \leq X \leq b) = F(b) - F(a)$.
+

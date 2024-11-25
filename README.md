@@ -129,6 +129,10 @@ the pmf represented by:
 
 $b(x; n, p) = {n \choose x}p^x(1-p)^{n-x}$
 
+Or, more canonically, let $q = (1-p)$ and
+
+$b(x; n, p) = {n \choose x}p^xq^{n-x}$.
+ 
 for $x = 0,1,2....$ (and $0$ otherwise).
 
 > Mean, Variance (TODO):

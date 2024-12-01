@@ -361,13 +361,19 @@ PDF of uniform distributions is $f(y; A,B) = \dfrac{1}{B-A}$ between A, B; 0 oth
 
 In the uniform distribution, the probability over a subinterval is proportional to the length of that subinterval
 
-## Expected Value: Continuous RV
+## Expected Value and Variance: Continuous RV
+
+> Mean or Expected Value of a continuous random variable:
 
 $E(Y) = \int_{-\infty}^{\infty} y * f(y) dy$
 
 Similarly, for $h(y)$, a function of $y$,
 
 $E[h(Y)] = \int_{-\infty}^{\infty} h(y) * f(y) dy$
+
+> Variance of a continuous random variable with PDF $f(x)$:
+
+$\sigma^2 = \int_{-\infty}^{\infty} (x-\mu)^2 * f(x) dx = E[(X-\mu)^2]$
 
 ## Cumulative Distribution Function (CDF)
 

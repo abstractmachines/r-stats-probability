@@ -483,9 +483,10 @@ This is similar; the "standardized variable Y" is $\dfrac{Y-\mu}{\sigma}$.
 > Standard normal distribution axioms:
 
 • $P(a \leq X \leq b) = P(\dfrac{a-\mu}{\sigma} \leq Z \leq \dfrac{b-\mu}{\sigma})$;
-Then, supposedly, that is equivalent to:
 
-$\phi(\dfrac{b-\mu}{\sigma}) - \phi(\dfrac{a-\mu}{\sigma})$.
+>> Then, when we see $\phi$, that means to use probability distribution tables:
+
+$\Rightarrow \phi(\dfrac{b-\mu}{\sigma}) - \phi(\dfrac{a-\mu}{\sigma})$.
 
 • $P(X \leq a) = \phi(\dfrac{a-\mu}{\sigma})$.
 

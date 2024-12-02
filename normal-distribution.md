@@ -58,6 +58,6 @@ $\Rightarrow .9918 - .2119 = .7799$.
 
 $P(|X - 15| \leq 3) = P(-3 \leq X - 15 \leq 3)$
 
-$ = P(\dfrac{-3}{1.25} \leq \dfrac{X-15}{1.25} \leq \dfrac{3}{1.25}) = P(-2.4 \leq Z \leq 2.4) = \phi(2.4) - \phi(-2.4)$,
+$P(\dfrac{-3}{1.25} \leq \dfrac{X-15}{1.25} \leq \dfrac{3}{1.25}) = P(-2.4 \leq Z \leq 2.4) = \phi(2.4) - \phi(-2.4)$,
 
 and again, when we see $\phi$ we use the tables, showing us that we have $.9918 - .0082 = 0.9836$.

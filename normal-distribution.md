@@ -16,6 +16,14 @@ $\Rightarrow P(X \leq 15) = P(\dfrac{X-15}{1.25}\leq \dfrac{15-15}{1.25})$
 
 $\Rightarrow P(Z \leq 0) = 0.5$.
 
+> So, to find the probability that a normally distributed, standardized variable
+is less than its mean, we want, as expressed in R:
+
+```R
+# P(Z <= mu):
+pnorm(0) # 0.5
+```
+
 > (b). $P(X \leq 17.5)$:
 
 
@@ -23,11 +31,25 @@ $P(X \leq 17.5) = P(\dfrac{X - 15}{1.25} \leq \dfrac{17.5 - 15}{1.25})$
 
 $\Rightarrow P(Z \leq \dfrac{2.5}{1.25}) \Rightarrow P(Z \leq 2)$, then per the table for $z = 2.00$, $\Rightarrow .9772$.
 
+> In R:
+
+```R
+# P(Z <= 2):
+pnorm(2) # 0.9772
+```
+
 > (c). $P(X \geq 10)$:
 
 $P(X \geq b) = 1 - \dfrac{b-\mu}{\sigma}$; yielding $P(X \geq 10) = P(\dfrac{X-\mu}{1.25} \geq \dfrac{10-15}{1.25})$
 
 $\Rightarrow P(Z \geq \dfrac{-5}{1.25}) \Rightarrow P(Z \geq -4) \Rightarrow 1 - P(Z \leq -4)$, by table, $1 - 0 = 1$.
+
+> In R:
+
+```R
+# P(Z <= 4):
+pnorm(4) #0.9999
+```
 
 ### This one is a pretty interesting application!
 
@@ -53,6 +75,13 @@ $\Rightarrow \phi(2.4) - \phi(-0.8)$
 
 $\Rightarrow .9918 - .2119 = .7799$.
 
+> In R:
+
+```R
+#P(2.4) - P(-0.8)
+pnorm(2.4) - pnorm(-0.8) # 0.7799
+```
+
 
 > (e). $P(|X - 15| \leq 3)$:
 
@@ -61,3 +90,10 @@ $P(|X - 15| \leq 3) = P(-3 \leq X - 15 \leq 3)$
 $P(\dfrac{-3}{1.25} \leq \dfrac{X-15}{1.25} \leq \dfrac{3}{1.25}) = P(-2.4 \leq Z \leq 2.4) = \phi(2.4) - \phi(-2.4)$,
 
 and again, when we see $\phi$ we use the tables, showing us that we have $.9918 - .0082 = 0.9836$.
+
+> In R:
+
+```R
+#P(2.4) - P(-2.4)
+pnorm(2.4) - pnorm(-2.4) # 0.9836
+```

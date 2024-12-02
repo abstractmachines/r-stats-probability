@@ -25,7 +25,7 @@ and other important concepts of combinatorics and statistics.
 13. [Probability Density Functions: PDF](#probabilty-density-functions)
 14. [Expected Value for a Continuous Random Variable](#expected-value-continuous-rv)
 15. [Cumulative Distribution Functions (CDFs)](#cumulative-distribution-function-cdf)
-16. [Normal Probability Distribution](#normal--probability-distribution)
+16. [Normal Probability Distribution](#normal-probability-distribution)
 
 ##  Probability Definition
 
@@ -419,4 +419,23 @@ We consider $\mu$ a location parameter since its location centers the bell curve
 
 we consider $\sigma$ a scale parameter since variance widens or narrows the curve,
 without changing its mean center location.
+
+The notation $Y \sim N(\mu,\sigma^2$) means _"the random variable Y is normally distributed, with params_ $\mu, \sigma^2$."
+
+> Area under the normal density function from a to b:
+
+$\int_a^b \dfrac{1}{\sigma\sqrt{2\pi}} e^{\frac{-(y-\mu)}{2\sigma^2}}$
+
+> R code: pnorm, qnorm
+
+$pnorm(y_0, \mu, \sigma) \Rightarrow P(Y \leq Y_0)$
+
+$qnorm(p \mu, \sigma) \Rightarrow $ the pth quantile such that $P(Y \leq \phi_p) = p$.
+
+It's convenient to often only calculate one side due to the geometry of the normal distribution.
+
+> Z Values: Distance in standard deviations from the mean
+
+$z = \dfrac{y-\mu}{\sigma}$
+
 

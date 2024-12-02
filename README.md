@@ -502,3 +502,5 @@ $\Rightarrow \phi(\dfrac{b-\mu}{\sigma}) - \phi(\dfrac{a-\mu}{\sigma})$.
 
     **Please note the normal distribution markdown file to see an application
     of the axioms of std normal distribution, as that is the best way to learn.**
+
+An interesting quality of the normal distribution is that its curve approximates the histogram Riemann-sums-like binomial distribution.

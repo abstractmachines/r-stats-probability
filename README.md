@@ -469,3 +469,29 @@ often only calculate one side due to the geometry of the normal distribution.
 The $Z_\alpha$ percentile is the $100(1-\alpha)$-th percentile of the distribution;
 this means _"area to the right_" of $\alpha$. For example, we say that
 $Z_{0.5} is the $100(1-0.05)$-th, or just 95th, percentile of the standard normal distribution.
+
+> Standardizing (nonstandard) distributions: $\mu = 1, \sigma = 1$
+
+Recall distance from the mean in standard deviations was $z = \dfrac{y-\mu}{\sigma}$.
+
+This is similar; the "standardized variable Y" is $\dfrac{Y-\mu}{\sigma}$.
+
+• Subtracting $\mu$ "shifts the mean to zero";
+
+• Dividing by $\sigma$ scales the variable s.t. the std deviation is 1 instead of $\sigma$.
+
+> Standard normal distribution axioms:
+
+• $P(a \leq X \leq b) = P(\dfrac{a-\mu}{\sigma} \leq Z \leq \dfrac{b-\mu}{\sigma})$;
+Then, supposedly, that is equivalent to:
+
+$\phi(\dfrac{b-\mu}{\sigma}) - \phi(\dfrac{a-\mu}{\sigma})$.
+
+• $P(X \leq a) = \phi(\dfrac{a-\mu}{\sigma})$.
+
+• $P(X \geq b) = 1 - \phi(\dfrac{b-\mu}{\sigma})$.
+
+• The CDF of Z = $\dfrac{X - \mu}{\sigma} = P(Z \leq z) = P(X \leq \sigma z + \mu) = \int_{-\infty}{\sigma z + \mu}) = f(x;\mu,\sigma) dx$.
+
+    **Please note the normal distribution markdown file to see an application
+    of the axioms of std normal distribution, as that is the best way to learn.**

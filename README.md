@@ -42,6 +42,12 @@ $$\frac{|E|}{|S|}$$
 
 The Wackerly probability book is great, and describes the sample-point method for calculating probability.
 
+One example is to toss a pair of dice. The sample space, via the `mn rule`, is $m \times n = (6)(6) = 36$ sample points in the sample space.
+
+There will be a list of events such as $E_1$ = the event that roll is $(1,1)$, event $E_2 = (1,2)$ and so on. Each event is called _equiprobable_, having equally likely probability. So each event $A$ has a probability $P(A) = \dfrac{N(A)}{N(S)} = \dfrac{1}{36}$.
+
+See the Wackerly book for more details on this technique, as well as sequenced events.
+
 ## Probability Technique: Sequenced Events
 
 Another technique, after sample point technique, is sequenced events.

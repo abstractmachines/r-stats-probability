@@ -25,6 +25,7 @@ and other important concepts of combinatorics and statistics.
 13. [Probability Density Functions: PDF](#probabilty-density-functions)
 14. [Expected Value for a Continuous Random Variable](#expected-value-continuous-rv)
 15. [Cumulative Distribution Functions (CDFs)](#cumulative-distribution-function-cdf)
+16. [Normal Probability Distribution](#normal--probability-distribution)
 
 ##  Probability Definition
 
@@ -395,3 +396,27 @@ $\forall a, b, a < b, P(a \leq X \leq b) = F(b) - F(a)$.
 If $X$ is a continuous random variable with PDF $f(x)$ and CDF $F(x)$,
 
 Then, $\forall x$ where $F\prime(x)$ exists, $F\prime(x) = f(x)$.
+
+## Normal Probability Distribution
+
+This is the famous "bell curve," the most widely used probability distribution,
+where the mean is at the center, and standard deviation depicts width around
+that mean of the curve, indicating its variance - or, its _volatility._ This
+relation to volatility helps us understand the bell curve's importance in
+measuring the relative stability of a metric.
+
+The normal distribution is common in statistics, economicics and finance.
+
+The little underlying standard deviations from the mean create the bell shape.
+
+> Normal Distribution for a continuous random variable has the PDF:
+
+$f(y; \mu, \sigma) = \dfrac{1}{\sigma\sqrt{2\pi}} e^{\frac{-(y-\mu)}{2\sigma^2}}$.
+
+> Parameters of the Normal Distribution: $\mu, \sigma$
+
+We consider $\mu$ a location parameter since its location centers the bell curve;
+
+we consider $\sigma$ a scale parameter since variance widens or narrows the curve,
+without changing its mean center location.
+

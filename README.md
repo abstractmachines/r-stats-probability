@@ -26,6 +26,7 @@ and other important concepts of combinatorics and statistics.
 14. [Expected Value for a Continuous Random Variable](#expected-value-continuous-rv)
 15. [Cumulative Distribution Functions (CDFs)](#cumulative-distribution-function-cdf)
 16. [Normal Probability Distribution](#normal-probability-distribution)
+17. [Standard Normal Distribution](#standard-normal-distribution)
 
 ##  Probability Definition
 
@@ -432,10 +433,39 @@ $pnorm(y_0, \mu, \sigma) \Rightarrow P(Y \leq Y_0)$
 
 $qnorm(p \mu, \sigma) \Rightarrow $ the pth quantile such that $P(Y \leq \phi_p) = p$.
 
-It's convenient to often only calculate one side due to the geometry of the normal distribution.
-
 > Z Values: Distance in standard deviations from the mean
 
 $z = \dfrac{y-\mu}{\sigma}$
 
+## Standard Normal Distribution
 
+This is the normal distribution, with param values $\mu = 0, \sigma = 1$.
+
+The PDF of a random continuous variable with standard normal distribution is:
+
+$f(z; \mu = 0, \sigma = 1) = \dfrac{1}{\sqrt{2\pi}} e^{\dfrac{-z^2}{2}}$.
+
+The "z -curve" is the standard normal curve. 
+
+> Z-scores: How many std dev from the mean a value is; areas under the curve
+
+>> 68-95-99 rule:
+
+68% of the distribution is within one standard deviation; 95% within two; 99% within three.
+
+So, 
+
+• 68% of all scores: $-1 < z < 1$,
+
+• 95% of all scores: $-2 < z < 2$,
+
+• 99% of all scores: $-3 < z < 3$,
+
+• and 50% of all scores: $0 < z < 0$, since the mean is at zero; it's convenient to
+often only calculate one side due to the geometry of the normal distribution.
+
+> Z-notation for z-critical values; percentiles
+
+The $Z_\alpha$ percentile is the $100(1-\alpha)$-th percentile of the distribution;
+this means _"area to the right_" of $\alpha$. For example, we say that
+$Z_{0.5} is the $100(1-0.05)$-th, or just 95th, percentile of the standard normal distribution.

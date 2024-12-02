@@ -1,6 +1,8 @@
 # The Normal Distribution
 
-4.32: Suppose the force acting on a column that helps to support a building is a normally distributed random variable X with mean value 15.0 and standard deviation 1.25. Compute the following probabilities by standardizing and then using Table A.3.
+## 4.32:
+
+> Suppose the force acting on a column that helps to support a building is a normally distributed random variable X with mean value 15.0 and standard deviation 1.25. Compute the following probabilities by standardizing and then using Table A.3.
 
 > (a). $P(X \leq 15)$:
 
@@ -96,4 +98,37 @@ and again, when we see $\phi$ we use the tables, showing us that we have $.9918 
 ```R
 #P(2.4) - P(-2.4)
 pnorm(2.4) - pnorm(-2.4) # 0.9836
+```
+
+## 4.44:
+
+> Find probability that a normally distributed random variable is:
+
+> (a). Within 1.5 standard deviations of its mean value:
+
+Since we're using the standard normal distribution, so we want $P(-1.5 \leq Z \leq 1.5)$, which would be $0.8663$ or in R,
+
+```R
+# Within 1.5 standard deviations of its mean value:
+pnorm(1.5) - pnorm(-1.5)  # 0.8663
+```
+
+> (b). Farther than 2.5 standard deviations from the mean:
+
+This would be $P(Z \leq -2.5) + [1 - P(Z \geq 2.5)]$, or in R,
+
+```R
+# Farther than 2.5 standard deviations from the mean:
+pnorm(-2.5) + 1 - pnorm(2.5) # 0.0124
+```
+
+> (c). Between 1 and 2 standard deviations from the mean:
+
+We need:
+
+$P(Z \leq 2) - P(Z \leq -2) - P(Z \leq 1) - P(Z \leq -1)$, or in R,
+
+```R
+# Between 1 and 2 standard deviations from the mean:
+(pnorm(2) - pnorm(-2)) - (pnorm(1) - pnorm(-1)) # 0.2718
 ```

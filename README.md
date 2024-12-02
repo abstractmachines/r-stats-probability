@@ -27,6 +27,7 @@ and other important concepts of combinatorics and statistics.
 15. [Cumulative Distribution Functions (CDFs)](#cumulative-distribution-function-cdf)
 16. [Normal Probability Distribution](#normal-probability-distribution)
 17. [Standard Normal Distribution](#standard-normal-distribution)
+18. [TODO Gamma and Exponential Distribution](#)
 
 ##  Probability Definition
 
@@ -504,3 +505,17 @@ $\Rightarrow \phi(\dfrac{b-\mu}{\sigma}) - \phi(\dfrac{a-\mu}{\sigma})$.
     of the axioms of std normal distribution, as that is the best way to learn.**
 
 An interesting quality of the normal distribution is that its curve approximates the histogram Riemann-sums-like binomial distribution.
+
+## TODO Gamma and Exponential Distribution
+
+> Gamma Distribution
+
+- PDF:
+
+- CDF:
+
+- $\mu = \alpha\Beta$
+
+- $\sigma^2 = \alpha\Beta^2$ ish, TODO
+
+TODO.

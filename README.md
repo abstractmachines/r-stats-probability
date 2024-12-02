@@ -108,6 +108,10 @@ $E(Y) = \mu_y = \sum y* p(y)$
 
 $V(Y) = \sigma^2_y = E[(Y - \mu)^2]$
 
+>> Hacking variance: $Var[Y] = E[Y^2] = [E(Y)]^2$
+
+A trick that's nice to know.
+
 > Standard Deviation of a Discrete Random Variable, $\sigma$
 
 $\sigma = \sqrt{\sigma^2}$

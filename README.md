@@ -28,7 +28,7 @@ and other important concepts of combinatorics and statistics.
 16. [Uniform Probability Distribution](#uniform-probability-distribution)
 17. [Normal Probability Distribution](#normal-probability-distribution)
 18. [Standard Normal Distribution](#standard-normal-distribution)
-19. [TODO Gamma and Exponential Distribution](#)
+19. [Gamma and Exponential Distributions](#gamma-and-exponential-distributions)
 
 ##  Probability Definition
 
@@ -557,16 +557,33 @@ $P(X \leq x) = \phi(\dfrac{x + 0.5 - \mu}{\sigma})$.
 This approximation is adequate if $np \geq 10$, $nq \geq 10$, as it gives enough symmetry in the underlying binomial distribution.
 
 
-## TODO Gamma and Exponential Distribution
+## Gamma and Exponential Distributions
+
+The gamma distribution, like the Poisson, is often used for waiting times and other measurements during temporal intervals.
+
+> Exponential Distribution:
+
+With scale param $\lambda$,
+
+- $\mu = \dfrac{1}{\lambda}$, and $\sigma^2 = \dfrac{1}{\lambda^2}$
+
+- PDF: $f(x, \lambda) = \lambda e^{-\lambda x}, x \geq 0$, else $0$
+
+- CDF: $F(x, \lambda) = 1 - e^{-\lambda x}, x > 0$, else $0$
 
 > Gamma Distribution
 
-- PDF:
+With params $\alpha, \Beta$,
 
-- CDF:
+- PDF: $f(y; \alpha, \Beta) = \dfrac{y^{\alpha - 1}e^{-y/\Beta}}{\Beta^{\alpha}\Tau(\alpha)}$,
+
+where gamma function $\Tau(\alpha) = \int_0^{\infty} y^{\alpha - 1}e^{-y} dy$;
+
+- PDF, Standard Gamma Distribution ($\Beta = 1$): $f(y; \alpha) = \dfrac{y^{\alpha - 1}e^{-y}}{\Tau(\alpha)}$
+
+- CDF: $F(y, \alpha) = \int_0^{y} \dfrac{y^{\alpha - 1}e^{-y}}{\Tau(\alpha)}$
 
 - $\mu = \alpha\Beta$
 
-- $\sigma^2 = \alpha\Beta^2$ ish, TODO
+- $\sigma^2 = \alpha\Beta^2$
 
-TODO.

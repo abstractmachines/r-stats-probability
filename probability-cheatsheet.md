@@ -124,3 +124,23 @@ $\dfrac{X - \mu}{\sigma} = P(Z \leq z) = P(X \leq \sigma z + \mu) = \int_{-\inft
 Use the Normal approximation:
 
 $\mu = np, \sigma = \sqrt{npq}$ like binomial, and $P(X \leq x) = \phi(\dfrac{x + 0.5 - \mu}{\sigma})$.
+
+## Gamma and Exponential Distributions
+
+> Exponential:
+
+- $\mu = \dfrac{1}{\lambda}$, and $\sigma^2 = \dfrac{1}{\lambda^2}$
+
+- PDF: $f(x, \lambda) = \lambda e^{-\lambda x}, x \geq 0$, else $0$; CDF: $F(x, \lambda) = 1 - e^{-\lambda x}, x > 0$, else $0$
+
+> Gamma:
+
+With params $\alpha, \Beta$,
+
+- PDF: $f(y; \alpha, \Beta) = \dfrac{y^{\alpha - 1}e^{-y/\Beta}}{\Beta^{\alpha}\Tau(\alpha)}$, Standard Gamma Distribution ($\Beta = 1$): $f(y; \alpha) = \dfrac{y^{\alpha - 1}e^{-y}}{\Tau(\alpha)}$
+
+where gamma function $\Tau(\alpha) = \int_0^{\infty} y^{\alpha - 1}e^{-y} dy$;
+
+- CDF: $F(y, \alpha) = \int_0^{y} \dfrac{y^{\alpha - 1}e^{-y}}{\Tau(\alpha)}$
+
+- $\mu = \alpha\Beta$ and $\sigma^2 = \alpha\Beta^2$

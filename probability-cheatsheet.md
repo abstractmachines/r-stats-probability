@@ -53,7 +53,7 @@ $F(x) = P(X \leq x) = \int_{-\infty}^x f(y) dy$. For each $x$, $F(x)$ is the are
 
 - $P(a \leq X \leq b) = F(b) - F(a)$.
 
-## Normal Probability Distribution
+## Uniform Probability Distribution
 
 > PDF:
 

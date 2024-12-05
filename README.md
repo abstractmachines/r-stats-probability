@@ -25,9 +25,10 @@ and other important concepts of combinatorics and statistics.
 13. [Probability Density Functions: PDF](#probabilty-density-functions)
 14. [Expected Value for a Continuous Random Variable](#expected-value-continuous-rv)
 15. [Cumulative Distribution Functions (CDFs)](#cumulative-distribution-function-cdf)
-16. [Normal Probability Distribution](#normal-probability-distribution)
-17. [Standard Normal Distribution](#standard-normal-distribution)
-18. [TODO Gamma and Exponential Distribution](#)
+16. [Uniform Probability Distribution](#uniform-probability-distribution)
+17. [Normal Probability Distribution](#normal-probability-distribution)
+18. [Standard Normal Distribution](#standard-normal-distribution)
+19. [TODO Gamma and Exponential Distribution](#)
 
 ##  Probability Definition
 
@@ -366,13 +367,6 @@ This axiom is analogous to the discrete RV's having all probabilities sum to 1 d
 
 2. $f(x) \geq 0, \forall x$. All probabilities of the PDF function are positive.
 
-> Uniform Distributions
-
-Uniform Distributions look like a "block", often.
-
-PDF of uniform distributions is $f(y; A,B) = \dfrac{1}{B-A}$ between A, B; 0 otherwise.
-
-In the uniform distribution, the probability over a subinterval is proportional to the length of that subinterval
 
 ## Expected Value and Variance: Continuous RV
 
@@ -408,6 +402,28 @@ $\forall a, b, a < b, P(a \leq X \leq b) = F(b) - F(a)$.
 If $X$ is a continuous random variable with PDF $f(x)$ and CDF $F(x)$,
 
 Then, $\forall x$ where $F\prime(x)$ exists, $F\prime(x) = f(x)$.
+
+## Uniform Probability Distribution
+
+In a uniform distribution, every possible outcome is equiprobable - for example, handing out a dollar to random passersby without discernment.
+
+Uniform Distributions look like a "block" most of the time, where probability is constant within an interval.
+
+> PDF:
+
+PDF of uniform distributions is $f(y; A,B) = \dfrac{1}{B-A}$ between A, B; 0 otherwise.
+
+In the uniform distribution, the probability over a subinterval is proportional to the length of that subinterval.
+
+> CDF:
+
+$F(x) = \dfrac{x-a}{b-a}$
+
+> $\mu, \sigma^2$:
+
+$\mu = \dfrac{a+b}{2}$
+
+$\sigma^2 = \dfrac{(b-a)^2}{12}$
 
 ## Normal Probability Distribution
 

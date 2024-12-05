@@ -409,6 +409,26 @@ In a uniform distribution, every possible outcome is equiprobable - for example,
 
 Uniform Distributions look like a "block" most of the time, where probability is constant within an interval.
 
+> Uniform Distributions for Discrete Random Variables
+
+The probability is 1, divided by total outcomes.
+
+Use cases include the possible outcomes of rolling a 6-sided die,
+
+probability of drawing a particular suit within a deck of cards,
+
+flipping a coin, etc.
+
+All of these are equiprobable discrete cases.
+
+> Uniform Distributions for Continuous Random Variables
+
+This can include a random number generator, temperature ranges, and many use cases
+with an infinite number of possible outcomes within an interval of measurement.
+
+For the continuous random variables, we'll present the probability density function,
+the cumulative distribution function, and mean and variance.
+
 > PDF:
 
 PDF of uniform distributions is $f(y; A,B) = \dfrac{1}{B-A}$ between A, B; 0 otherwise.

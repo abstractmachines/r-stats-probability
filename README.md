@@ -508,7 +508,7 @@ So,
 
 • 99% of all scores: $-3 < z < 3$,
 
-• and 50% of all scores: $0 < z < 0$, since the mean is at zero; it's convenient to
+• and 50% of all scores: $0 < z$, since the mean is at zero; it's convenient to
 often only calculate one side due to the geometry of the normal distribution.
 
 > Z-notation for z-critical values; percentiles
@@ -539,7 +539,7 @@ $\Rightarrow \phi(\dfrac{b-\mu}{\sigma}) - \phi(\dfrac{a-\mu}{\sigma})$.
 
 • $P(X \geq b) = 1 - \phi(\dfrac{b-\mu}{\sigma})$.
 
-• The CDF of Z = $\dfrac{X - \mu}{\sigma} = P(Z \leq z) = P(X \leq \sigma z + \mu) = \int_{-\infty}{\sigma z + \mu}) = f(x;\mu,\sigma) dx$.
+• The CDF of Z = $\dfrac{X - \mu}{\sigma} = P(Z \leq z) = P(X \leq \sigma z + \mu) = \int_{-\infty}^{\sigma z + \mu} = f(x;\mu,\sigma) dx$.
 
     **Please note the normal distribution markdown file to see an application
     of the axioms of std normal distribution, as that is the best way to learn.**

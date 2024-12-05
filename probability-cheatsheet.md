@@ -70,3 +70,51 @@ $F(x) = \dfrac{x-a}{b-a}$
 $\mu = \dfrac{a+b}{2}$
 
 $\sigma^2 = \dfrac{(b-a)^2}{12}$
+
+## Normal Probability Distribution
+
+> Normal Distribution for a continuous random variable has the PDF:
+
+$f(y; \mu, \sigma) = \dfrac{1}{\sigma\sqrt{2\pi}} e^{\frac{-(y-\mu)}{2\sigma^2}}$.
+
+> Area under the normal density function from a to b:
+
+$\int_a^b \dfrac{1}{\sigma\sqrt{2\pi}} e^{\frac{-(y-\mu)}{2\sigma^2}}$
+
+> Z Values: Distance in standard deviations from the mean
+
+$z = \dfrac{y-\mu}{\sigma}$
+
+## Standard Normal Distribution
+
+This is the normal distribution, with param values $\mu = 0, \sigma = 1$.
+
+The PDF of a random continuous variable with standard normal distribution is:
+
+$f(z; \mu = 0, \sigma = 1) = \dfrac{1}{\sqrt{2\pi}} e^{\dfrac{-z^2}{2}}$.
+
+The "z -curve" is the standard normal curve. 
+
+> Z-scores: How many std dev from the mean a value is; areas under the curve
+
+>> 68-95-99 rule:
+
+68% of the distribution is within one standard deviation; 95% within two; 99% within three.
+
+> Standardizing (nonstandard) distributions: $\mu = 1, \sigma = 1$
+
+Recall distance from the mean in standard deviations was $z = \dfrac{y-\mu}{\sigma}$.
+
+This is similar; the "standardized variable Y" is $\dfrac{Y-\mu}{\sigma}$.
+
+> Standard normal distribution axioms:
+
+• $P(a \leq X \leq b) = P(\dfrac{a-\mu}{\sigma} \leq Z \leq \dfrac{b-\mu}{\sigma})$
+
+• $P(X \leq a) = \phi(\dfrac{a-\mu}{\sigma})$.
+
+• $P(X \geq b) = 1 - \phi(\dfrac{b-\mu}{\sigma})$.
+
+> The CDF of Z:
+
+$\dfrac{X - \mu}{\sigma} = P(Z \leq z) = P(X \leq \sigma z + \mu) = \int_{-\infty}^{\sigma z + \mu} = f(x;\mu,\sigma) dx$.

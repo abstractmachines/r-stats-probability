@@ -12,20 +12,26 @@ $\int_{-5}^0 f(y)  dy \Rightarrow \int_{-5}^0 \dfrac{1}{10} dy \Rightarrow \dfra
 
 > (b). Find $P(-2.5 \leq X \leq 2.5)$.
 
-This is the same integral, only at different limits:
+Here, we have an ask for an interval probability, so we should focus on the CDF for a continuous random variable, distributed uniformly.
 
-$\Rightarrow \dfrac{1}{10} * y \Biggr|_{-2.5}^{2.5} \Rightarrow \dfrac{1}{10}(2.5) - \dfrac{1}{10}(-2.5) \Rightarrow \dfrac{2.5}{10} - \dfrac{-2.5}{10} \Rightarrow \dfrac{5}{10} = \dfrac{1}{2} = 0.5$.
+Note that the CDF for the uniform distribution is, generally,
+
+$F(x) = \dfrac{x-a}{b-a}$,
+
+which in this case, is $F(x) = \dfrac{x-(-5)}{5-(-5)} \Rightarrow \dfrac{x+5}{10}$.
+
+So, $P(-2.5 \leq X \leq 2.5)$, per the CDF axiom $\forall a, b, a < b, P(a \leq X \leq b) = F(b) - F(a)$,
+
+$\Rightarrow P(-2.5 \leq X \leq 2.5) = F(2.5) - F(-2.5) = \dfrac{2.5 + 5}{10} - \dfrac{-2.5+5}{10} \Rightarrow .75 - .25 = 0.5$.
 
 > (c). Find $P(-2 \leq X \leq 3)$.
 
-$\Rightarrow \dfrac{1}{10} * y \Biggr|_{-2}^{3} \Rightarrow \dfrac{3}{10} - \dfrac{-2}{10} \Rightarrow \dfrac{5}{10} = 0.5.$
+Similarly via CDF, this would be
+
+$\Rightarrow P(-2 \leq X \leq 3) = F(3) - F(-2) = \dfrac{3+5}{10} - \dfrac{-2+5}{10} \Rightarrow 0.8 - 0.3 = 0.5.$
 
 > (d). For $k$ satisfying $-5 < k < k + 4 < 5$, compute $P(k < X < k +4)$.
 
-Generally from our forms above we can see that the PDF function for uniform probability is computed, at integral limits $a,b$ for example, as such:
+Similarly via CDF, this would be
 
-$\Rightarrow \dfrac{1}{10} * y \Biggr|_{a}^{b} \Rightarrow \dfrac{b-a}{10}$. We see this work repeated in parts a - c above.
-
-Now, taking $k$, we see that condition $k+4 < 5 \Rightarrow k < 1$, and from $-5 < k$, we can see that $-5 < k < 1$; this means that $k \in [-5,5]$, thusly $k \in [A,B]$ and hence the same PDF still applies since we're within bounds of $[A,B]$. 
-
-$\Rightarrow \dfrac{1}{10}\Biggr|_{k}^{k+4} \Rightarrow \dfrac{(k+4) - k}{10} \Rightarrow \dfrac{4}{10} = 0.4$. 
+$P(k < X < k +4) = F(k+4) - F(k) = \dfrac{k+4+5}{10} - \dfrac{k+5}{10} \Rightarrow \dfrac{k+4+5 -k - 5}{10} = \dfrac{4}{10} = 0.4$.

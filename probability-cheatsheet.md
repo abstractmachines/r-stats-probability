@@ -118,3 +118,9 @@ This is similar; the "standardized variable Y" is $\dfrac{Y-\mu}{\sigma}$.
 > The CDF of Z:
 
 $\dfrac{X - \mu}{\sigma} = P(Z \leq z) = P(X \leq \sigma z + \mu) = \int_{-\infty}^{\sigma z + \mu} = f(x;\mu,\sigma) dx$.
+
+> Standard Normal Approximation of Binomial:
+
+Use the Normal approximation:
+
+$\mu = np, \sigma = \sqrt{npq}$ like binomial, and $P(X \leq x) = \phi(\dfrac{x + 0.5 - \mu}{\sigma})$.

@@ -544,7 +544,18 @@ $\Rightarrow \phi(\dfrac{b-\mu}{\sigma}) - \phi(\dfrac{a-\mu}{\sigma})$.
     **Please note the normal distribution markdown file to see an application
     of the axioms of std normal distribution, as that is the best way to learn.**
 
-An interesting quality of the normal distribution is that its curve approximates the histogram Riemann-sums-like binomial distribution.
+> Standard Normal Approximation of Binomial:
+
+An interesting quality of the normal distribution is that its curve approximates the histogram Riemann-sums-like binomial distribution when a random variable under the binomial distribution has histograms that aren't "too skewed". For these cases, use the normal approximation.
+
+> Normal approximation:
+
+$\mu = np, \sigma = \sqrt{npq}$ like binomial, and
+
+$P(X \leq x) = \phi(\dfrac{x + 0.5 - \mu}{\sigma})$.
+
+This approximation is adequate if $np \geq 10$, $nq \geq 10$, as it gives enough symmetry in the underlying binomial distribution.
+
 
 ## TODO Gamma and Exponential Distribution
 

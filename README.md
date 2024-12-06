@@ -594,6 +594,37 @@ where gamma function $\Tau(\alpha) = \int_0^{\infty} y^{\alpha - 1}e^{-y} dy$;
 
 ## Multivariate - Bivariate, Joint Probability Distributions
 
+Until now we've seen univariate probability distributions. The same basic axioms
+and rules tend to apply to multivariate distributions.
+
+### Discrete PMFs (or joint PMFs/CDFs):
+
+>> Example: toss a pair of dice.
+
+The sample space by the `mn` rule is $m \times n = 6 \times 6 = 36$ possible pairs  of sample points,
+
+with events such as $E_1 = (1,1)$ having the probability of $\dfrac{1}{36}$.
+
+Hence, the bivariate probability function is $P(Y_1 = y_1, Y_2 = y_2) = \dfrac{1}{36}$.
+
+> Joint or Bivariate PMFs for discrete random multiple variables is their sum:
+
+$P(Y_1 = y_1, Y_2 = y_2) = F(y_1,y_2) = \sum_{t_1 \leq y_1} \sum_{t_2 \leq y_2}p(t_1,t_2)$.
+
+- Axioms: Probabilities all nonzero, and all probabilities sum to 1.
+
+Example: For tossing two die, find $P(2 \leq Y_1 \leq 3, 1 \leq Y_2 \leq 2)$:
+
+Simply sum the probabilities:
+
+$P(2,1) + P(2,2) + P(3,1) + P(3,2) = \frac{1}{36} + \frac{1}{36} + \frac{1}{36} + \frac{1}{36} = \frac{4}{36} = \frac{1}{9}$.
+
+### Continuous CDFs:
+
+> Joint or Bivariate CDFs for two jointly continuous random variables is a double integral:
+
+$P(a_1 \leq Y_1 \leq a_2, b_1 \leq Y_2 \leq b_2) = F(a,b) = \int_{b_1}^{b_2} \int_{a_1}^{a_2} f(y_1,y_2) dy_1dy_2$. (Integrate the inside first then outside at limits).
+
 ## Marginal and Conditional Probability Distributions
 
 ## Independent Random Variables

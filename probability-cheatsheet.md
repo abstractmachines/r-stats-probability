@@ -144,3 +144,11 @@ where gamma function $\Tau(\alpha) = \int_0^{\infty} y^{\alpha - 1}e^{-y} dy$;
 - CDF: $F(y, \alpha) = \int_0^{y} \dfrac{y^{\alpha - 1}e^{-y}}{\Tau(\alpha)}$
 
 - $\mu = \alpha\Beta$ and $\sigma^2 = \alpha\Beta^2$
+
+> Joint or Bivariate PMFs for discrete random multiple variables is their sum:
+
+$P(Y_1 = y_1, Y_2 = y_2) = F(y_1,y_2) = \sum_{t_1 \leq y_1} \sum_{t_2 \leq y_2}p(t_1,t_2)$.
+
+> Joint or Bivariate CDFs for two jointly continuous random variables is a double integral: (Integrate the inside first then outside at limits).
+
+$P(a_1 \leq Y_1 \leq a_2, b_1 \leq Y_2 \leq b_2) = F(a,b) = \int_{b_1}^{b_2} \int_{a_1}^{a_2} f(y_1,y_2) dy_1dy_2$. 

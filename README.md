@@ -29,6 +29,11 @@ and other important concepts of combinatorics and statistics.
 17. [Normal Probability Distribution](#normal-probability-distribution)
 18. [Standard Normal Distribution](#standard-normal-distribution)
 19. [Gamma and Exponential Distributions](#gamma-and-exponential-distributions)
+20. [Multivariate (Bivariate, Joint) Probability Distributions](#multivariate---bivariate-joint-probability-distributions)
+21. [Marginal and Conditional Probability Distributions](#marginal-and-conditional-probability-distributions)
+22. [Independent Random Variables](#independent-random-variables)
+23. [Expected Value of a Function of Random Variables](#expected-value-of-a-function-of-random-variables)
+24. [Covariance of Two Random Variables](#covariance-of-two-random-variables)
 
 ##  Probability Definition
 
@@ -587,3 +592,12 @@ where gamma function $\Tau(\alpha) = \int_0^{\infty} y^{\alpha - 1}e^{-y} dy$;
 
 - $\sigma^2 = \alpha\Beta^2$
 
+## Multivariate - Bivariate, Joint Probability Distributions
+
+## Marginal and Conditional Probability Distributions
+
+## Independent Random Variables
+
+## Expected Value of a Function of Random Variables
+
+## Covariance of Two Random Variables

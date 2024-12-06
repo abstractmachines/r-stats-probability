@@ -151,4 +151,8 @@ $P(Y_1 = y_1, Y_2 = y_2) = F(y_1,y_2) = \sum_{t_1 \leq y_1} \sum_{t_2 \leq y_2}p
 
 > Joint or Bivariate CDFs for two jointly continuous random variables is a double integral: (Integrate the inside first then outside at limits).
 
-$P(a_1 \leq Y_1 \leq a_2, b_1 \leq Y_2 \leq b_2) = F(a,b) = \int_{b_1}^{b_2} \int_{a_1}^{a_2} f(y_1,y_2) dy_1dy_2$. 
+$P(a_1 \leq Y_1 \leq a_2, b_1 \leq Y_2 \leq b_2) = F(a,b) = \int_{b_1}^{b_2} \int_{a_1}^{a_2} f(y_1,y_2) dy_1dy_2$.
+
+> Marginal Probability Functions: Fix one var, iterate (sum, integrate) over the other; accumulate.
+
+- Discrete PMF: $p_x(x) = \sum_{\forall y} p(x,y), \forall x$. ... Continuous CDF: $f_x(x) = \int_{\forall y} f(x,y) dy$.

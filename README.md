@@ -637,7 +637,7 @@ $P(Y_1 = y_1, Y_2 = y_2)$ with the union taken "over all possible values of $y_2
 
 - Discrete PMF: $p_x(x) = \sum_{\forall y} p(x,y), \forall x$.
 
-- Continuous CDF: $f(_x(x) = \int_{\forall y} f(x,y) dy$.
+- Continuous CDF: $f_x(x) = \int_{\forall y} f(x,y) dy$.
 
 ## Independent Random Variables
 

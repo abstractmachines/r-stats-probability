@@ -578,19 +578,19 @@ With scale param $\lambda$,
 
 > Gamma Distribution
 
-With params $\alpha, \Beta$,
+With params $\alpha, \beta$,
 
-- PDF: $f(y; \alpha, \Beta) = \dfrac{y^{\alpha - 1}e^{-y/\Beta}}{\Beta^{\alpha}\Tau(\alpha)}$,
+- PDF: $f(y; \alpha, \beta) = \dfrac{y^{\alpha - 1}e^{-y/\beta}}{\beta^{\alpha}\tau(\alpha)}$,
 
-where gamma function $\Tau(\alpha) = \int_0^{\infty} y^{\alpha - 1}e^{-y} dy$;
+where gamma function $\tau(\alpha) = \int_0^{\infty} y^{\alpha - 1}e^{-y} dy$;
 
-- PDF, Standard Gamma Distribution ($\Beta = 1$): $f(y; \alpha) = \dfrac{y^{\alpha - 1}e^{-y}}{\Tau(\alpha)}$
+- PDF, Standard Gamma Distribution ($\beta = 1$): $f(y; \alpha) = \dfrac{y^{\alpha - 1}e^{-y}}{\tau(\alpha)}$
 
-- CDF: $F(y, \alpha) = \int_0^{y} \dfrac{y^{\alpha - 1}e^{-y}}{\Tau(\alpha)}$
+- CDF: $F(y, \alpha) = \int_0^{y} \dfrac{y^{\alpha - 1}e^{-y}}{\tau(\alpha)}$
 
-- $\mu = \alpha\Beta$
+- $\mu = \alpha\beta$
 
-- $\sigma^2 = \alpha\Beta^2$
+- $\sigma^2 = \alpha\beta^2$
 
 ## Multivariate - Bivariate, Joint Probability Distributions
 

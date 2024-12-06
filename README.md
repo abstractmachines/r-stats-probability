@@ -627,6 +627,18 @@ $P(a_1 \leq Y_1 \leq a_2, b_1 \leq Y_2 \leq b_2) = F(a,b) = \int_{b_1}^{b_2} \in
 
 ## Marginal and Conditional Probability Distributions
 
+### Marginal
+
+Bivariate events such as $P(Y_1 = y_1, Y_2 = y_2)$ we've seen, and per Wackerly,
+it follows that _univariate events e.g. $P(Y_1 = y_1)$ is the **union of bivariate events**
+$P(Y_1 = y_1, Y_2 = y_2)$ with the union taken "over all possible values of $y_2$."
+
+> Marginal Probability Functions: Fix one var, iterate (sum, integrate) over the other; accumulate.
+
+- Discrete PMF: $p_x(x) = \sum_{\forall y} p(x,y), \forall x$.
+
+- Continuous CDF: $f(_x(x) = \int_{\forall y} f(x,y) dy$.
+
 ## Independent Random Variables
 
 ## Expected Value of a Function of Random Variables

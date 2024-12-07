@@ -61,6 +61,10 @@ $$\frac{|E|}{|S|}$$
 
 $P(B) = P(B|A)P(A) + P(B|A\prime)P(A\prime) + P(B|C)P(C) ...$
 
+> Law of Conditional Probability:
+
+$P(A|B) = \dfrac{P(A \cap B)}{P(B)}$
+
 > Independent Events:
 
 $P(A|B) = P(A)$, and/or if $A \cap B = \emptyset \Rightarrow P(A \cap B) = P(A)P(B)$.
@@ -699,6 +703,13 @@ $P(Y_1 = y_1, Y_2 = y_2)$ with the union taken "over all possible values of $y_2
 - Discrete PMF: $p_x(x) = \sum_{\forall y} p(x,y), \forall x$.
 
 - Continuous CDF: $f_x(x) = \int_{\forall y} f(x,y) dy$.
+
+### Conditional
+
+We know that bivariate or joint events such as $P(y_1, y_2)$ are the intersection
+of two univariate events, s.t. $P(y_1, y_2) = P(y_1 \cap y_2)$.
+
+Since $P(A|B) = \dfrac{P(A \cap B)}{P(B)} \Rightarrow P(y_1 | y_2) = \dfrac{P(y_1 \cap y_2)}{p(y_2)}$.
 
 ## Independent Random Variables
 

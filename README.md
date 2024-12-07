@@ -13,7 +13,7 @@ and other important concepts of combinatorics and statistics.
 
 # Table of Contents
 1. [Probability Definition: Events, Sample Points and Sequencing Events Techniques](#probability-definition)
-2. [How to calculate probability: Combinations, Permutations, Cardinality](#how-to-calculate-probability)
+2. [How to calculate probability: Combinations, Permutations, Bayes Theorem](#how-to-calculate-probability)
 3. [Expected Value, Variance, Standard Deviation, Quartiles](#expected-value-variance-standard-deviation-quartiles)
 4. [Discrete Random Variables](#discrete-random-variables)
 5. [Discrete Probability Distributions: Binomial](#binomial-probability-distribution)
@@ -120,8 +120,15 @@ Note that the denominator is smaller than in combinations. Permuations possibili
 
 Examples: Out of the set `S= {A, B, C}`, a combination set would include `AAA`,  `AAB`, `ABC`, .... etc, and `ABA != BAA.`
 
+> Bayes Theorem:
 
-### Cardinality
+Usually used for inversion techniques. "Find probability of a cause, given effect."
+
+Let $A_1, ... A_k$ be mutually exclusive, disjoint events with prior probabilities.
+
+Then, $P(A_i | B) = \dfrac{P(A_i \cap B}{P(B)} = \dfrac{P(B|A_i)P(A_i)}{\sum_{i=1}^k P(B|A_i)P(A_i)}$
+
+> Cardinality
 
 [Cardinality](https://en.wikipedia.org/wiki/Cardinality) is the number of elements in a Set.
 

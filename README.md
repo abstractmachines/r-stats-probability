@@ -57,6 +57,10 @@ $$\frac{|E|}{|S|}$$
 
 ### Laws of Probability
 
+> Law of Total Probability:
+
+$P(B) = P(B|A)P(A) + P(B|A\prime)P(A\prime) + P(B|C)P(C) ...$
+
 > Independent Events:
 
 $P(A|B) = P(A)$, and/or if $A \cap B = \emptyset \Rightarrow P(A \cap B) = P(A)P(B)$.
@@ -64,6 +68,12 @@ $P(A|B) = P(A)$, and/or if $A \cap B = \emptyset \Rightarrow P(A \cap B) = P(A)P
 One really interesting quality about independent events is that reliant events are dependent;
 
 "negative number" versus "positive number" are dependent events.
+
+> Mutually Exclusive is not Independent
+
+Take the "negative number" versus "positive number" setup. "if A, then not B".
+
+Here, events are dependent, and mutually exclusive. 
 
 > Multiplicative:
 

@@ -629,6 +629,8 @@ $P(a_1 \leq Y_1 \leq a_2, b_1 \leq Y_2 \leq b_2) = F(a,b) = \int_{b_1}^{b_2} \in
 
 ### Marginal
 
+>  "To find p1(y1), we sum p(y1, y2) over all values of y2 and hence accumulate the probabilities on the y1 axis (or margin)." - Wackerly
+
 Bivariate events such as $P(Y_1 = y_1, Y_2 = y_2)$ we've seen, and per Wackerly,
 it follows that _univariate events e.g. $P(Y_1 = y_1)$ is the **union of bivariate events**
 $P(Y_1 = y_1, Y_2 = y_2)$ with the union taken "over all possible values of $y_2$."

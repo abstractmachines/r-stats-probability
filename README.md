@@ -1,5 +1,7 @@
 # RStudio projects for probability and statistics
 
+Assumption: Set theory and proofs familiarity
+
 Source(s):
 
 Most of this material is derived from _"Mathematical Statistics"_ by Wackerly.
@@ -45,6 +47,44 @@ that the event is in.
 
 $$\frac{|E|}{|S|}$$
 
+### Axioms of Probability
+
+• For any event, the probability is nonnegative.
+
+• Probability of entire sample space is $1$, or $100\%$.
+
+• The likelihood of at least 1 event occurring is the sum of all events.
+
+### Laws of Probability
+
+> Independent Events:
+
+$P(A|B) = P(A)$, and/or if $A \cap B = \emptyset \Rightarrow P(A \cap B) = P(A)P(B)$.
+
+One really interesting quality about independent events is that reliant events are dependent;
+
+"negative number" versus "positive number" are dependent events.
+
+> Multiplicative:
+
+$P(A \cap B) = P(A) P(B|A) = P(B)P(A|B)$.
+
+If A and B independent, $P(A \cap B) = P(A)P(B)$.
+
+> Additive:
+
+$P(A \cup B) = P(A) + P(B) - P(A \cap B)$.
+
+If A and B are mutually exclusive, $P(A \cap B) = 0$ and $P(A \cup B) = P(A) + P(B)$.
+
+### Some Probability Properties
+
+• $P(A) + P(A\prime) = 1$, and by Complement Law, $P(A) = 1 - P(A\prime)$.
+
+• The complement of "at most one" is "at least two."
+
+• The complement of "at least one type" is "only one type."
+
 ## Probability Technique: Sample Points
 
 The Wackerly probability book is great, and describes the sample-point method for calculating probability.
@@ -62,6 +102,8 @@ Another technique, after sample point technique, is sequenced events.
 ## How to calculate probability
 
 ### Counting Distinct Objects : Combinations and Permutations
+
+> Ordering n items: $n!$ ways.
 
 > Combinations: Order Doesn't Matter
 

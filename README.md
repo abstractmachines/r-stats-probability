@@ -25,7 +25,7 @@ and other important concepts of combinatorics and statistics.
 11. [Probability Distributions "Distribution Functions" for all types of variables](#distribution-functions---or-cumulative-distributions---are-for-any-type-of-variable)
 12. [What is Density? A Mathematician's Perspective (and prep for Density Functions)](#what-is-density-a-mathematicians-perspective)
 13. [Probability Density Functions: PDF](#probabilty-density-functions)
-14. [Expected Value for a Continuous Random Variable](#expected-value-continuous-rv)
+14. [Expected Value for a Continuous Random Variable](#expected-value-and-variance-continuous-rv)
 15. [Cumulative Distribution Functions (CDFs)](#cumulative-distribution-function-cdf)
 16. [Uniform Probability Distribution](#uniform-probability-distribution)
 17. [Normal Probability Distribution](#normal-probability-distribution)
@@ -723,4 +723,18 @@ If Y1 and Y2 are independent, the joint probability can be written as the produc
 
 ## Expected Value of a Function of Random Variables
 
-## Covariance of Two Random Variables
+This is the same as in univariate situations, just multiply the variable value by the (density/mass/PDF/pmf) function.
+
+## Covariance and Correlation of Two Random Variables
+
+Covariance and Correlation are measures of dependency. The larger the covariance,
+the larger the correlation (zero covariance, zero correlation).
+
+If $Y_1, Y_2$ are random variables with means $\mu_1, \mu_2$, the covariance 
+is $Cov(Y_1, Y_2) = E (Y_1 − \mu_1)(Y_2 − \mu_2)]$.
+
+Positive covariance indicates proportionality; negative indicate inverse proportionality.
+
+Since covariance is hard to use, we often use the correlation coefficient instead:
+
+$\rho = \dfrac{Cov(Y_1,Y_2)}{\sigma_1 \sigma_2}$

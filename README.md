@@ -746,4 +746,4 @@ $\rho = \dfrac{Cov(Y_1,Y_2)}{\sigma_1 \sigma_2}$
 
 Random Sampling for any distribution: $E[\bar{Y}]  = \mu, V[\bar{Y}] = \dfrac{\sigma^2}{n}$.
 
-If the sample size is large, $\bar{Y}$ will have an approximately normal sampling distribution.
+If the sample size is large, $\bar{Y}$ will have an approximately normal sampling distribution, so as $n \rightarrow \infty$, the distribution function will converge to the standard normal one.

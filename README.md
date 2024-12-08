@@ -296,11 +296,11 @@ Recall the geometric distribution, which is finding the probability of the first
 
 Depending on the textbook you are using, this is either counting the number of failures, or counting the trial where the $r$th success occurs.
 
+The "rth success". $p(y) = {(y-1) \choose (r-1)}p^rq^{y-r}$ where $y$ is either num of failures before rth success (Devore) or num trial on which rth success occurs (Wackerley). $\mu = \dfrac{r}{p}$, $\sigma^2 = \dfrac{r(1-p)}{p^2}$.
+
 > Distribution (TODO): (case 1, Wackerly)
 
 > Distribution (TODO): Case 2, Devore
-
-> Mean, Variance (TODO):
 
 ## Poisson Distribution
 

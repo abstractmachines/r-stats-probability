@@ -733,6 +733,8 @@ the larger the correlation (zero covariance, zero correlation).
 If $Y_1, Y_2$ are random variables with means $\mu_1, \mu_2$, the covariance 
 is $Cov(Y_1, Y_2) = E (Y_1 − \mu_1)(Y_2 − \mu_2)]$.
 
+After some algebra, we can see that's also $E[XY] - E[X]E[Y]$.
+
 Positive covariance indicates proportionality; negative indicate inverse proportionality.
 
 Since covariance is hard to use, we often use the correlation coefficient instead:

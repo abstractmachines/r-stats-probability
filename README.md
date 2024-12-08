@@ -36,6 +36,7 @@ and other important concepts of combinatorics and statistics.
 22. [Independent Random Variables](#independent-random-variables)
 23. [Expected Value of a Function of Random Variables](#expected-value-of-a-function-of-random-variables)
 24. [Covariance of Two Random Variables](#covariance-of-two-random-variables)
+25. [Central-Limit-Theorem](#central-limit-theorem)
 
 ##  Probability Definition
 
@@ -740,3 +741,9 @@ Positive covariance indicates proportionality; negative indicate inverse proport
 Since covariance is hard to use, we often use the correlation coefficient instead:
 
 $\rho = \dfrac{Cov(Y_1,Y_2)}{\sigma_1 \sigma_2}$
+
+## Central Limit Theorem
+
+Random Sampling for any distribution: $E[\bar{Y}]  = \mu, V[\bar{Y}] = \dfrac{\sigma^2}{n}$.
+
+If the sample size is large, $\bar{Y}$ will have an approximately normal sampling distribution.

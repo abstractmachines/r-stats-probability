@@ -709,9 +709,17 @@ $P(Y_1 = y_1, Y_2 = y_2)$ with the union taken "over all possible values of $y_2
 We know that bivariate or joint events such as $P(y_1, y_2)$ are the intersection
 of two univariate events, s.t. $P(y_1, y_2) = P(y_1 \cap y_2)$.
 
-Since $P(A|B) = \dfrac{P(A \cap B)}{P(B)} \Rightarrow P(y_1 | y_2) = \dfrac{P(y_1 \cap y_2)}{p(y_2)}$.
+Generally, $P(A|B) = \dfrac{P(A \cap B)}{P(B)} \Rightarrow P(y_1 | y_2) = \dfrac{P(y_1 \cap y_2)}{p(y_2)}$.
+
+Less generally:
+
+> Conditional: Discrete: $P(y_1, y_2) = P(y_1 \cap y_2) = P(Y_1 = y_1, Y_2 = y_2)$
+
+> Conditional: Continuous: $P(y_1 | y_2) = P(y_1 \cap y_2) = P(Y_1 \leq y_1 | Y_2 = y_2)$
 
 ## Independent Random Variables
+
+If Y1 and Y2 are independent, the joint probability can be written as the product of the marginal probabilities: $F(y_1, y_2) = F_1(y_1)F_2(y_2)$.
 
 ## Expected Value of a Function of Random Variables
 

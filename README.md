@@ -17,6 +17,7 @@ and other important concepts of combinatorics and statistics.
 3. [Expected Value, Variance, Standard Deviation, Quartiles](#expected-value-variance-standard-deviation-quartiles)
 4. [Discrete Random Variables](#discrete-random-variables)
 5. [Discrete Probability Distributions: Binomial](#binomial-probability-distribution)
+- 5b. [Bernoulli](#bernoulli-random-variables-and-distributions)
 6. [Discrete Probability Distributions: Geometric](#geometric-probability-distribution)
 7. [Discrete Probability Distributions: Hypergeometric](#hypergeometric-probability-distribution)
 8. [Discrete Probability Distributions: Negative Binomial](#negative-binomial-distribution)
@@ -202,9 +203,10 @@ Probability mass functions will depend on the particular problem you're trying t
 1. Each possible value of the random variable must be assigned a nonzero probability;
 2. All of the probabilities must sum to a total probability of `1`.
 
+
 ## Binomial Probability Distribution
 
-To be continued when there is more time :) Essentially, repeated uniform experiments of a series of failures and successes, for example $\{F,F,F,F,S,F,S,F...\}$; the random variable for the binomial distribution counts the number of successes in each trial.
+The binomial distribution is *identical, independent* trials. These are uniform experiments of a series of failures and successes, for example $\{F,F,F,F,S,F,S,F...\}$; the random variable for the binomial distribution counts the number of successes in each trial.
 
 > Distribution:
 
@@ -225,6 +227,18 @@ for $x = 0,1,2....$ (and $0$ otherwise).
 $\mu = E(Y) = np$
 
 $\sigma^2 = npq$
+
+## Bernoulli Random Variables and Distributions
+
+The Bernoulli distribution is considered a special case of the binomial distribution, with $n = 1$.
+
+Bernoulli random variables, or distributions, are considered the simplest. This is a binary random variable with "success" denoted as `p` and "failure" as `1-p`, or just `q` where `q = 1-p`.
+
+- PMF: $f(x;p) = p$ if success, $f(x;p) = 1-p = q$ if failure.
+
+- Mean: $\mu = 1-p$
+
+- Variance: $\sigma^2 = p(1-p) \Rightarrow pq$
 
 ## Geometric Probability Distribution
 

@@ -31,13 +31,14 @@ and other important concepts of combinatorics and statistics.
 16. [Uniform Probability Distribution](#uniform-probability-distribution)
 17. [Normal Probability Distribution](#normal-probability-distribution)
 18. [Standard Normal Distribution](#standard-normal-distribution)
+- 18b. [Central Limit Theorem](#central-limit-theorem)
+
 19. [Gamma and Exponential Distributions](#gamma-and-exponential-distributions)
 20. [Multivariate (Bivariate, Joint) Probability Distributions](#multivariate---bivariate-joint-probability-distributions)
 21. [Marginal and Conditional Probability Distributions](#marginal-and-conditional-probability-distributions)
 22. [Independent Random Variables](#independent-random-variables)
 23. [Expected Value of a Function of Random Variables](#expected-value-of-a-function-of-random-variables)
 24. [Covariance of Two Random Variables](#covariance-of-two-random-variables)
-25. [Central-Limit-Theorem](#central-limit-theorem)
 
 ##  Probability Definition
 
@@ -598,7 +599,7 @@ often only calculate one side due to the geometry of the normal distribution.
 
 The $Z_\alpha$ percentile is the $100(1-\alpha)$-th percentile of the distribution;
 this means _"area to the right_" of $\alpha$. For example, we say that
-$Z_{0.5} is the $100(1-0.05)$-th, or just 95th, percentile of the standard normal distribution.
+$Z_{0.5}$ is the $100(1-0.05)$-th, or just 95th, percentile of the standard normal distribution.
 
 > Standardizing (nonstandard) distributions: $\mu = 1, \sigma = 1$
 
@@ -638,6 +639,16 @@ $\mu = np, \sigma = \sqrt{npq}$ like binomial, and
 $P(X \leq x) = \phi(\dfrac{x + 0.5 - \mu}{\sigma})$.
 
 This approximation is adequate if $np \geq 10$, $nq \geq 10$, as it gives enough symmetry in the underlying binomial distribution.
+
+## Central Limit Theorem
+
+> "For large enough n, things are normal."
+
+For a large enough sample size of n, usually $n > 30$, a standard normal distribution will suffice for a random variable.
+
+<!-- Random Sampling for any distribution: $E[\bar{Y}]  = \mu, V[\bar{Y}] = \dfrac{\sigma^2}{n}$. -->
+
+If the sample size is large, $\bar{Y}$ will have an approximately normal sampling distribution, so as $n \rightarrow \infty$, the distribution function will converge to the standard normal one.
 
 
 ## Gamma and Exponential Distributions
@@ -755,9 +766,3 @@ Positive covariance indicates proportionality; negative indicate inverse proport
 Since covariance is hard to use, we often use the correlation coefficient instead:
 
 $\rho = \dfrac{Cov(Y_1,Y_2)}{\sigma_1 \sigma_2}$
-
-## Central Limit Theorem
-
-Random Sampling for any distribution: $E[\bar{Y}]  = \mu, V[\bar{Y}] = \dfrac{\sigma^2}{n}$.
-
-If the sample size is large, $\bar{Y}$ will have an approximately normal sampling distribution, so as $n \rightarrow \infty$, the distribution function will converge to the standard normal one.

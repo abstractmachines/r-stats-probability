@@ -562,7 +562,7 @@ $\int_a^b \dfrac{1}{\sigma\sqrt{2\pi}} e^{\frac{-(y-\mu)}{2\sigma^2}}$
 
 $pnorm(y_0, \mu, \sigma) \Rightarrow P(Y \leq Y_0)$
 
-$qnorm(p \mu, \sigma) \Rightarrow $ the pth quantile such that $P(Y \leq \phi_p) = p$.
+$qnorm(p \mu, \sigma) \Rightarrow$ the pth quantile such that $P(Y \leq \phi_p) = p$.
 
 > Z Values: Distance in standard deviations from the mean
 

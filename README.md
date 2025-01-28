@@ -29,7 +29,8 @@ and other important concepts of combinatorics and statistics.
 14. [Expected Value for a Continuous Random Variable](#expected-value-and-variance-continuous-rv)
 15. [Cumulative Distribution Functions (CDFs)](#cumulative-distribution-function-cdf)
 16. [Uniform Probability Distribution](#uniform-probability-distribution)
-17. [Normal Probability Distribution](#normal-probability-distribution)
+17. [Normal (and Standard Normal) Probability Distributions](#normal-probability-distribution)
+- 17b. [Z Scores](#standard-scores-z-scores)
 18. [Standard Normal Distribution](#standard-normal-distribution)
 - 18b. [Central Limit Theorem](#central-limit-theorem)
 
@@ -564,10 +565,6 @@ $pnorm(y_0, \mu, \sigma) \Rightarrow P(Y \leq Y_0)$
 
 $qnorm(p \mu, \sigma) \Rightarrow$ the pth quantile such that $P(Y \leq \phi_p) = p$.
 
-> Z Values: Distance in standard deviations from the mean
-
-$z = \dfrac{y-\mu}{\sigma}$
-
 ## Standard Normal Distribution
 
 This is the normal distribution, with param values $\mu = 0, \sigma = 1$.
@@ -576,6 +573,17 @@ The PDF of a random continuous variable with standard normal distribution is:
 
 $f(z; \mu = 0, \sigma = 1) = \dfrac{1}{\sqrt{2\pi}} e^{\dfrac{-z^2}{2}}$.
 
+## Standard Scores (Z Scores)
+
+> Z score / Z Value / Standard Score
+
+Z Scores are called so many things, but they all mean the same thing: the 
+distance of an observed value from the statistical mean. Theoretically, this 
+would be the population mean.
+
+$z = \dfrac{y-\mu}{\sigma}$
+
+> Z Curve
 The "z -curve" is the standard normal curve. 
 
 > Z-scores: How many std dev from the mean a value is; areas under the curve

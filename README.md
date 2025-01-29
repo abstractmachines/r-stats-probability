@@ -684,9 +684,9 @@ This approximation is adequate if $np \geq 10$, $nq \geq 10$, as it gives enough
 
 For a large enough sample size of n, usually $n > 30$, a standard normal distribution will suffice for a random variable.
 
-<!-- Random Sampling for any distribution: $E[\bar{Y}]  = \mu, V[\bar{Y}] = \dfrac{\sigma^2}{n}$. -->
+<!-- Random Sampling for any distribution: $E[\overline{Y}]  = \mu, V[\overline{Y}] = \dfrac{\sigma^2}{n}$. -->
 
-If the sample size is large, $\bar{Y}$ will have an approximately normal sampling distribution, so as $n \rightarrow \infty$, the distribution function will converge to the standard normal one.
+If the sample size is large, $\overline{Y}$ will have an approximately normal sampling distribution, so as $n \rightarrow \infty$, the distribution function will converge to the standard normal one.
 
 
 ## Gamma and Exponential Distributions
@@ -887,11 +887,62 @@ $\Rightarrow E[(X-\mu)^2] \Rightarrow E[(X-E[X])^2] \Rightarrow E[X^2] - E[X]^2$
 
 > Method of Estimation: Method of Moments
 
-TODO
+>> Typical problem statement: "Use method of moments to obtain an estimator for $\theta$."
+
+For the first population moment, $E(X) = \mu$ and  first sample moment $\overline{X} = \dfrac{1}{n} \sum X_i$;
+
+For the second population moment, $E(X^2)$ and  first sample moment $\overline{X}^2 = \dfrac{1}{n} \sum X_i^2$;
+
+Let the kth population moment be $E[X^k]$, and let the kth sample moment be $\dfrac{1}{n} \sum_{i=1}^n x_i^k$. 
+
+As covered in Devore 6.2, the method of moments estimator is obtained by equating the expected value $E(X^k)$ to actual, sampled value  to $\overline{X^k}$.
+
+As covered in Wackerly, the nth raw moment (about zero) of a random variable $X$
+with density function $f(x)$, is:
+
+- $<X^n> = \sum_i X_i^n * f(x_i)$ for a discrete distribution,
+
+   ... very similarly to evaluating a discrete PMF, $f(x,...) = x*f(x)$;
+
+- $<X^n> = \int (x-\mu)^n * f(x) dx$ for a continuous distribution, similar to CDF.
+
+That's it. That is the "method of moments" technique for obtaining estimators for $\theta$.
 
 > Method of Estimation: Method of Maximum Likelihood
 
-TODO
+>> Typical problem statement: "Use method of maximum likelihood to obtain an estimator for $\theta$."
+
+Process:
+
+• (1) Take the distribution function, e.g. the PDF or CDF. This is also called
+the `likelihood function`. Same thing.
+
+This would be a joint PMF/PDF/CDF. Recall that joint probability looks like 
+$P(A \cap B) = P(A)P(B)$, particularly with independent events $\because P(A \cap B) = \emptyset$.
+
+Notably this joint probability is a product $P(A)P(B)$. This will matter below.
+
+• (2) Take its natural log. Why? Because it's easier due to logarithm rules as follow.
+
+Recall that the joint probability is a product. Logarithm rules apply,
+
+"The log of a product $\Rightarrow$ sum of logs:"
+
+$log(A*B) \Rightarrow log(A) + log(B)$.
+
+Notation and flow for this step would generally be something like:
+
+$\prod_{i=1}^n f(x) x_i^{\theta} = ln[ f(x) ] + ln [\sum x_i^{\theta}]$.
+
+• (3) Take its derivative and set that to equal for "maximum value."
+
+We are taking the derivative of the log function in the last step. Set it to zero.
+
+• (4) Solve for $\theta$ to find the value that has the maximum likelihood, or 
+probability, of being an estimator for $\theta$.
+
+That's it.
+
 
 > Confidence Intervals
 

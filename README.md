@@ -852,6 +852,29 @@ This completely squares with what we discussed earlier, using sample data to est
 
 TODO finish this section
 
+> Unbiased Estimator
+
+Bias of a point estimate is $E(\hat{\theta}) - \theta$. For an unbiased estimate, 
+this is $0$, and expected value of the estimator is exactly the param value:
+
+$E[\hat{\theta}] = \theta$.
+
+> Good Estimator: Minimum Variance Unbiased Estimator (MVUE)
+
+A good estimator has minimal variance, and has a "skinny" scatter about the mean.
+
+MUVE: $\hat{\mu} - \overline{x}$. TODO ...
+
+Recall also variance mathematical manipulations, TODO
+
+> Method of Estimation: Method of Moments
+
+TODO
+
+> Method of Estimation: Method of Maximum Likelihood
+
+TODO
+
 > Confidence Intervals
 
 TODO write, and finish, this section

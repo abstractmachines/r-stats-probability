@@ -816,15 +816,16 @@ Moments of a probability distribution include:
 
    (This makes sense as an average of many points in the sample.)
 
-- Moment 2: Variance
+> Moment 2: Variance
 
 - The second population moment is $E(X^2) = \sigma^2$;
-- The first sample moment is $\overline{x}^2 = \dfrac{1}{n} \sum X_i^2$ or $s^2$.
+- The second sample moment is $\overline{x}^2 = \dfrac{1}{n} \sum X_i^2$ or $s^2$.
 
+> Moment 3: Skewness (whether the data is skewed to the left or right of the mean), e.g. asymmetry about mean;
 
-- Skewness (whether the data is skewed to the left or right of the mean), e.g. asymmetry about mean;
+> Moment 4: Kurtosis ("tail-ness").
 
-- Kurtosis ("tail-ness").
+> Moment k: 
 
 - The kth population moment is $E(X^k)$;
 
@@ -893,7 +894,7 @@ For the first population moment, $E(X) = \mu$ and  first sample moment $\overlin
 
 For the second population moment, $E(X^2)$ and  first sample moment $\overline{X}^2 = \dfrac{1}{n} \sum X_i^2$;
 
-Let the kth population moment be $E[X^k]$, and let the kth sample moment be $\dfrac{1}{n} \sum_{i=1}^n x_i^k$. 
+Let the kth population moment be $E[X^k]$, and let the kth sample moment be $\dfrac{1}{n} \sum_{i=1}^n x_i^k$.
 
 As covered in Devore 6.2, the method of moments estimator is obtained by equating the expected value $E(X^k)$ to actual, sampled value  to $\overline{X^k}$.
 

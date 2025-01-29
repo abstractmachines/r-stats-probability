@@ -575,13 +575,42 @@ $f(z; \mu = 0, \sigma = 1) = \dfrac{1}{\sqrt{2\pi}} e^{\dfrac{-z^2}{2}}$.
 
 ## Standard Scores (Z Scores)
 
-> Z score / Z Value / Standard Score
+"Z score / Z Value / Standard Score"
+
+> From the population (mostly theoretical or edge cases)
 
 Z Scores are called so many things, but they all mean the same thing: the 
 distance of an observed value from the statistical mean. Theoretically, this 
-would be the population mean.
+would be the population mean, although that is hard to measure as we will cover.
 
-$z = \dfrac{y-\mu}{\sigma}$
+$z = \dfrac{y-\mu}{\sigma}$, 
+
+where the observed value is $y$, the population mean
+$\mu$, and the population standard deviation $\sigma$. So "z scores" or 
+"standard scores" are also in the business of converting "raw scores", e.g. 
+observed data or values (here, $xy$) into standard or raw scores.
+
+Z Scores represent how far an observed value is from the statistical mean (recall
+again that population mean and std dev can be difficult to get to, so we say 
+"statistical mean" to indicate this abstraction). If a Z Score is 1, that means
+the observed raw value $y$ is one standard deviation above the statistical mean.
+If a Z score is zero, that means the observed value $y$ is equivalent to the mean.
+
+> From the sample (most actual practice)
+
+Outside of "standardized testing" where an entire population is measured (including
+its mean and standard deviation). So, often, population mean and standard deviation
+are unknown. In these cases, we use sample statistics instead of population statistics.
+
+Using sample stats,
+
+$z = \dfrac{y- \overline{y}}{s}$, where $\overline{y}$ is the sample mean, 
+and $s$ is the sample standard deviation.
+
+Unfortunately many statisticians will not make clear the very important difference
+between population and sample statistics in their Z scores, making it confusing
+to figure out what they are talking about. You will often see $\overline{y}$ 
+observed _sample_ data, mixed with $\sigma$ _population_ data, in their work.
 
 > Z Curve
 The "z -curve" is the standard normal curve. 

@@ -39,6 +39,8 @@ and other important concepts of combinatorics and statistics.
 22. [Independent Random Variables](#independent-random-variables)
 23. [Expected Value of a Function of Random Variables](#expected-value-of-a-function-of-random-variables)
 24. [Covariance of Two Random Variables](#covariance-of-two-random-variables)
+25. [Moments](#moments)
+26. [Estimation: Statistical Inference (and Confidence Intervals)](#estimation-statistical-inference)
 
 ##  Probability Definition
 
@@ -802,3 +804,56 @@ Positive covariance indicates proportionality; negative indicate inverse proport
 Since covariance is hard to use, we often use the correlation coefficient instead:
 
 $\rho = \dfrac{Cov(Y_1,Y_2)}{\sigma_1 \sigma_2}$
+
+## Moments
+
+Moments of a probability distribution include:
+
+- Expected value (mean);
+
+- Variance;
+
+- Skewness (whether the data is skewed to the left or right of the mean), e.g. asymmetry about mean;
+
+- Kurtosis ("tail-ness").
+
+These moments will be fundamental to techniques of estimation that follow.
+
+## Estimation: Statistical Inference
+
+The purpose of statistics is to make inferences about data, and conclusions. We make 
+inferences about a population, and its sample(s). All the data, is not always known.
+
+So, we use _parameters_ to pass into functions - joint probability functions,
+estimation functions, and so on, in order to estimate, and infer, data.
+
+When we create estimates they can be a scalar point estimate, or a prediction interval,
+e.g. a confidence interval.
+
+> Point Estimates
+
+Notation: $\hat{\theta}$ is the "point estimator" of the parameter $\theta$.
+
+We use $\theta$ as an abstraction.
+
+Now, remember when we talked above in the "z scores/standardization" section about
+statistics often using population or sample data, mixed, without much explanation.
+Here we see that in play:
+
+"One example is $\hat{\mu}$, the point estimator of $\mu$, is $\overline{x}$, the sample mean."
+
+That statement is really saying the following:
+- there is a _population_ mean $\mu$.
+- By changing $\mu$ into $\hat{\mu}$, we are saying "what is the _estimator of $\mu$?
+- That question is answered on the RHS of the equation, by $\overline{x}$, the sample mean.
+
+This completely squares with what we discussed earlier, using sample data to estimate
+(often unavailable) population data.
+
+TODO finish this section
+
+> Confidence Intervals
+
+TODO write, and finish, this section
+
+

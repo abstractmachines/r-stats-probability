@@ -809,13 +809,26 @@ $\rho = \dfrac{Cov(Y_1,Y_2)}{\sigma_1 \sigma_2}$
 
 Moments of a probability distribution include:
 
-- Expected value (mean);
+> Moment 1: Expected value (mean)
 
-- Variance;
+- The first population moment is $E(X) = \mu$;
+- The first sample moment is $\overline{x} = \dfrac{1}{n} \sum X_i$.
+
+   (This makes sense as an average of many points in the sample.)
+
+- Moment 2: Variance
+
+- The second population moment is $E(X^2) = \sigma^2$;
+- The first sample moment is $\overline{x}^2 = \dfrac{1}{n} \sum X_i^2$ or $s^2$.
+
 
 - Skewness (whether the data is skewed to the left or right of the mean), e.g. asymmetry about mean;
 
 - Kurtosis ("tail-ness").
+
+- The kth population moment is $E(X^k)$;
+
+- The kth sample moment is $\overline{x}^k = \dfrac{1}{n} \sum X_i^k$.
 
 These moments will be fundamental to techniques of estimation that follow.
 
@@ -863,9 +876,14 @@ $E[\hat{\theta}] = \theta$.
 
 A good estimator has minimal variance, and has a "skinny" scatter about the mean.
 
-MUVE: $\hat{\mu} - \overline{x}$. TODO ...
+MUVE: $\hat{\mu} - \overline{x}$. (Basically, minimal variance points us to a 
+preferred estimator, all other things being equal with other estimators).
 
-Recall also variance mathematical manipulations, TODO
+> Recall also variance derivations, often used in estimation techniques:
+
+$\sigma^2 = Var[X] =$
+
+$\Rightarrow E[(X-\mu)^2] \Rightarrow E[(X-E[X])^2] \Rightarrow E[X^2] - E[X]^2$.
 
 > Method of Estimation: Method of Moments
 

@@ -1005,9 +1005,13 @@ $[\hat{\theta}_L, \hat{\theta}_U]$ is the resulting two sided confidence interva
 
 > One sided confidence interval:
 
-Let $P(\hat{\theta}_L \leq \theta) = 1 - \alpha$, with implied one-sided CI of $(\hat{\theta}_L, \infty)$, or
+Let $P(\hat{\theta}_L \leq \theta) = 1 - \alpha$, with implied one-sided CI of $(\hat{\theta}_L, \infty)$, or,
 
-Let $P(\theta \leq \hat{\theta}_U) = 1 - \alpha$,  with implied one-sided CI of $(-\infty, \hat{\theta}_U)$.
+less abstractly, $\overline{x} - Z_{\alpha/2}*\dfrac{s}{\sqrt{n}} < \mu$;
+
+Let $P(\theta \leq \hat{\theta}_U) = 1 - \alpha$,  with implied one-sided CI of $(-\infty, \hat{\theta}_U)$, or,
+
+less abstractly, $\mu < \overline{x} + Z_{\alpha/2}*\dfrac{s}{\sqrt{n}}$.
 
 > Finding a confidence interval
 

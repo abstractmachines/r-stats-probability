@@ -12,6 +12,9 @@ The Wackerly book has more formulas (instead of tables), introductions to the mn
 and other important concepts of combinatorics and statistics.
 
 # Table of Contents
+
+-- Part 1: The Basics --
+
 1. [Probability Definition: Events, Sample Points and Sequencing Events Techniques](#probability-definition)
 2. [How to calculate probability: Combinations, Permutations, Bayes Theorem](#how-to-calculate-probability)
 3. [Expected Value, Variance, Standard Deviation, Quartiles](#expected-value-variance-standard-deviation-quartiles)
@@ -29,18 +32,22 @@ and other important concepts of combinatorics and statistics.
 14. [Expected Value for a Continuous Random Variable](#expected-value-and-variance-continuous-rv)
 15. [Cumulative Distribution Functions (CDFs)](#cumulative-distribution-function-cdf)
 16. [Uniform Probability Distribution](#uniform-probability-distribution)
-17. [Normal Probability Distributions](#normal-probability-distribution)
-18. [Standard Normal Distribution](#standard-normal-distribution)
-- 18b. [Z Scores](#standard-scores-z-scores)
-- 18c. [Central Limit Theorem](#central-limit-theorem)
-19. [Gamma and Exponential Distributions](#gamma-and-exponential-distributions)
-20. [Multivariate (Bivariate, Joint) Probability Distributions](#multivariate---bivariate-joint-probability-distributions)
-21. [Marginal and Conditional Probability Distributions](#marginal-and-conditional-probability-distributions)
-22. [Independent Random Variables](#independent-random-variables)
-23. [Expected Value of a Function of Random Variables](#expected-value-of-a-function-of-random-variables)
-24. [Covariance of Two Random Variables](#covariance-of-two-random-variables)
-25. [Moments](#moments)
-26. [Estimation: Statistical Inference (and Confidence Intervals)](#estimation-statistical-inference)
+17. [Gamma and Exponential Distributions](#gamma-and-exponential-distributions)
+18. [Multivariate (Bivariate, Joint) Probability Distributions](#multivariate---bivariate-joint-probability-distributions)
+19. [Marginal and Conditional Probability Distributions](#marginal-and-conditional-probability-distributions)
+20. [Independent Random Variables](#independent-random-variables)
+21. [Expected Value of a Function of Random Variables](#expected-value-of-a-function-of-random-variables)
+22. [Covariance of Two Random Variables](#covariance-of-two-random-variables)
+
+-- Part Two: Estimation and Application --
+
+[Introduction](#part-two-introduction)
+1. [Normal Probability Distributions](#normal-probability-distribution)
+2. [Standard Normal Distribution](#standard-normal-distribution)
+- 2b. [Z Scores](#standard-scores-z-scores)
+- 2c. [Central Limit Theorem](#central-limit-theorem)
+3. [Moments](#moments)
+4. [Estimation: Statistical Inference (and Confidence Intervals)](#estimation-statistical-inference)
 
 ##  Probability Definition
 
@@ -531,6 +538,134 @@ $\mu = \dfrac{a+b}{2}$
 
 $\sigma^2 = \dfrac{(b-a)^2}{12}$
 
+## Gamma and Exponential Distributions
+
+The gamma distribution, like the Poisson, is often used for waiting times and other measurements during temporal intervals.
+
+> Exponential Distribution:
+
+With scale param $\lambda$,
+
+- $\mu = \dfrac{1}{\lambda}$, and $\sigma^2 = \dfrac{1}{\lambda^2}$
+
+- PDF: $f(x, \lambda) = \lambda e^{-\lambda x}, x \geq 0$, else $0$
+
+- CDF: $F(x, \lambda) = 1 - e^{-\lambda x}, x > 0$, else $0$
+
+> Gamma Distribution
+
+With params $\alpha, \beta$,
+
+- PDF: $f(y; \alpha, \beta) = \dfrac{y^{\alpha - 1}e^{-y/\beta}}{\beta^{\alpha}\tau(\alpha)}$,
+
+where gamma function $\tau(\alpha) = \int_0^{\infty} y^{\alpha - 1}e^{-y} dy$;
+
+- PDF, Standard Gamma Distribution ($\beta = 1$): $f(y; \alpha) = \dfrac{y^{\alpha - 1}e^{-y}}{\tau(\alpha)}$
+
+- CDF: $F(y, \alpha) = \int_0^{y} \dfrac{y^{\alpha - 1}e^{-y}}{\tau(\alpha)}$
+
+- $\mu = \alpha\beta$
+
+- $\sigma^2 = \alpha\beta^2$
+
+## Multivariate - Bivariate, Joint Probability Distributions
+
+Until now we've seen univariate probability distributions. The same basic axioms
+and rules tend to apply to multivariate distributions.
+
+### Discrete PMFs (or joint PMFs/CDFs):
+
+>> Example: toss a pair of dice.
+
+The sample space by the `mn` rule is $m \times n = 6 \times 6 = 36$ possible pairs  of sample points,
+
+with events such as $E_1 = (1,1)$ having the probability of $\dfrac{1}{36}$.
+
+Hence, the bivariate probability function is $P(Y_1 = y_1, Y_2 = y_2) = \dfrac{1}{36}$.
+
+> Joint or Bivariate PMFs for discrete random multiple variables is their sum:
+
+$P(Y_1 = y_1, Y_2 = y_2) = F(y_1,y_2) = \sum_{t_1 \leq y_1} \sum_{t_2 \leq y_2}p(t_1,t_2)$.
+
+- Axioms: Probabilities all nonzero, and all probabilities sum to 1.
+
+Example: For tossing two die, find $P(2 \leq Y_1 \leq 3, 1 \leq Y_2 \leq 2)$:
+
+Simply sum the probabilities:
+
+$P(2,1) + P(2,2) + P(3,1) + P(3,2) = \frac{1}{36} + \frac{1}{36} + \frac{1}{36} + \frac{1}{36} = \frac{4}{36} = \frac{1}{9}$.
+
+### Continuous CDFs:
+
+> Joint or Bivariate CDFs for two jointly continuous random variables is a double integral:
+
+$P(a_1 \leq Y_1 \leq a_2, b_1 \leq Y_2 \leq b_2) = F(a,b) = \int_{b_1}^{b_2} \int_{a_1}^{a_2} f(y_1,y_2) dy_1dy_2$. (Integrate the inside first then outside at limits).
+
+## Marginal and Conditional Probability Distributions
+
+### Marginal
+
+>  "To find p1(y1), we sum p(y1, y2) over all values of y2 and hence accumulate the probabilities on the y1 axis (or margin)." - Wackerly
+
+Bivariate events such as $P(Y_1 = y_1, Y_2 = y_2)$ we've seen, and per Wackerly,
+it follows that _univariate events e.g. $P(Y_1 = y_1)$ is the **union of bivariate events**
+$P(Y_1 = y_1, Y_2 = y_2)$ with the union taken "over all possible values of $y_2$."
+
+> Marginal Probability Functions: Fix one var, iterate (sum, integrate) over the other; accumulate.
+
+- Discrete PMF: $p_x(x) = \sum_{\forall y} p(x,y), \forall x$.
+
+- Continuous CDF: $f_x(x) = \int_{\forall y} f(x,y) dy$.
+
+### Conditional
+
+We know that bivariate or joint events such as $P(y_1, y_2)$ are the intersection
+of two univariate events, s.t. $P(y_1, y_2) = P(y_1 \cap y_2)$.
+
+Generally, $P(A|B) = \dfrac{P(A \cap B)}{P(B)} \Rightarrow P(y_1 | y_2) = \dfrac{P(y_1 \cap y_2)}{p(y_2)}$.
+
+Less generally:
+
+> Conditional: Discrete: $P(y_1, y_2) = P(y_1 \cap y_2) = P(Y_1 = y_1, Y_2 = y_2)$
+
+> Conditional: Continuous: $P(y_1 | y_2) = P(y_1 \cap y_2) = P(Y_1 \leq y_1 | Y_2 = y_2)$
+
+## Independent Random Variables
+
+If Y1 and Y2 are independent, the joint probability can be written as the product of the marginal probabilities: $F(y_1, y_2) = F_1(y_1)F_2(y_2)$.
+
+## Expected Value of a Function of Random Variables
+
+This is the same as in univariate situations, just multiply the variable value by the (density/mass/PDF/pmf) function.
+
+## Covariance and Correlation of Two Random Variables
+
+Covariance and Correlation are measures of dependency. The larger the covariance,
+the larger the correlation (zero covariance, zero correlation).
+
+If $Y_1, Y_2$ are random variables with means $\mu_1, \mu_2$, the covariance 
+is $Cov(Y_1, Y_2) = E (Y_1 − \mu_1)(Y_2 − \mu_2)]$.
+
+After some algebra, we can see that's also $E[XY] - E[X]E[Y]$.
+
+Positive covariance indicates proportionality; negative indicate inverse proportionality.
+
+Since covariance is hard to use, we often use the correlation coefficient instead:
+
+$\rho = \dfrac{Cov(Y_1,Y_2)}{\sigma_1 \sigma_2}$
+
+
+## Part Two: Introduction
+
+Or, "why did we wait until now to talk about the normal distribution and z scores?"
+
+The answer is, because we use those things for estimation, and they belong best
+together in an introduction. The normal distribution is the most frequently used
+probability distribution. We'll learn about that, and then about z scores and moments
+which feed into estimation.
+
+Z scores also help us with confidence intervals and estimation.
+
 ## Normal Probability Distribution
 
 This is the famous "bell curve," the most widely used probability distribution,
@@ -688,122 +823,6 @@ For a large enough sample size of n, usually $n > 30$, a standard normal distrib
 
 If the sample size is large, $\overline{Y}$ will have an approximately normal sampling distribution, so as $n \rightarrow \infty$, the distribution function will converge to the standard normal one.
 
-
-## Gamma and Exponential Distributions
-
-The gamma distribution, like the Poisson, is often used for waiting times and other measurements during temporal intervals.
-
-> Exponential Distribution:
-
-With scale param $\lambda$,
-
-- $\mu = \dfrac{1}{\lambda}$, and $\sigma^2 = \dfrac{1}{\lambda^2}$
-
-- PDF: $f(x, \lambda) = \lambda e^{-\lambda x}, x \geq 0$, else $0$
-
-- CDF: $F(x, \lambda) = 1 - e^{-\lambda x}, x > 0$, else $0$
-
-> Gamma Distribution
-
-With params $\alpha, \beta$,
-
-- PDF: $f(y; \alpha, \beta) = \dfrac{y^{\alpha - 1}e^{-y/\beta}}{\beta^{\alpha}\tau(\alpha)}$,
-
-where gamma function $\tau(\alpha) = \int_0^{\infty} y^{\alpha - 1}e^{-y} dy$;
-
-- PDF, Standard Gamma Distribution ($\beta = 1$): $f(y; \alpha) = \dfrac{y^{\alpha - 1}e^{-y}}{\tau(\alpha)}$
-
-- CDF: $F(y, \alpha) = \int_0^{y} \dfrac{y^{\alpha - 1}e^{-y}}{\tau(\alpha)}$
-
-- $\mu = \alpha\beta$
-
-- $\sigma^2 = \alpha\beta^2$
-
-## Multivariate - Bivariate, Joint Probability Distributions
-
-Until now we've seen univariate probability distributions. The same basic axioms
-and rules tend to apply to multivariate distributions.
-
-### Discrete PMFs (or joint PMFs/CDFs):
-
->> Example: toss a pair of dice.
-
-The sample space by the `mn` rule is $m \times n = 6 \times 6 = 36$ possible pairs  of sample points,
-
-with events such as $E_1 = (1,1)$ having the probability of $\dfrac{1}{36}$.
-
-Hence, the bivariate probability function is $P(Y_1 = y_1, Y_2 = y_2) = \dfrac{1}{36}$.
-
-> Joint or Bivariate PMFs for discrete random multiple variables is their sum:
-
-$P(Y_1 = y_1, Y_2 = y_2) = F(y_1,y_2) = \sum_{t_1 \leq y_1} \sum_{t_2 \leq y_2}p(t_1,t_2)$.
-
-- Axioms: Probabilities all nonzero, and all probabilities sum to 1.
-
-Example: For tossing two die, find $P(2 \leq Y_1 \leq 3, 1 \leq Y_2 \leq 2)$:
-
-Simply sum the probabilities:
-
-$P(2,1) + P(2,2) + P(3,1) + P(3,2) = \frac{1}{36} + \frac{1}{36} + \frac{1}{36} + \frac{1}{36} = \frac{4}{36} = \frac{1}{9}$.
-
-### Continuous CDFs:
-
-> Joint or Bivariate CDFs for two jointly continuous random variables is a double integral:
-
-$P(a_1 \leq Y_1 \leq a_2, b_1 \leq Y_2 \leq b_2) = F(a,b) = \int_{b_1}^{b_2} \int_{a_1}^{a_2} f(y_1,y_2) dy_1dy_2$. (Integrate the inside first then outside at limits).
-
-## Marginal and Conditional Probability Distributions
-
-### Marginal
-
->  "To find p1(y1), we sum p(y1, y2) over all values of y2 and hence accumulate the probabilities on the y1 axis (or margin)." - Wackerly
-
-Bivariate events such as $P(Y_1 = y_1, Y_2 = y_2)$ we've seen, and per Wackerly,
-it follows that _univariate events e.g. $P(Y_1 = y_1)$ is the **union of bivariate events**
-$P(Y_1 = y_1, Y_2 = y_2)$ with the union taken "over all possible values of $y_2$."
-
-> Marginal Probability Functions: Fix one var, iterate (sum, integrate) over the other; accumulate.
-
-- Discrete PMF: $p_x(x) = \sum_{\forall y} p(x,y), \forall x$.
-
-- Continuous CDF: $f_x(x) = \int_{\forall y} f(x,y) dy$.
-
-### Conditional
-
-We know that bivariate or joint events such as $P(y_1, y_2)$ are the intersection
-of two univariate events, s.t. $P(y_1, y_2) = P(y_1 \cap y_2)$.
-
-Generally, $P(A|B) = \dfrac{P(A \cap B)}{P(B)} \Rightarrow P(y_1 | y_2) = \dfrac{P(y_1 \cap y_2)}{p(y_2)}$.
-
-Less generally:
-
-> Conditional: Discrete: $P(y_1, y_2) = P(y_1 \cap y_2) = P(Y_1 = y_1, Y_2 = y_2)$
-
-> Conditional: Continuous: $P(y_1 | y_2) = P(y_1 \cap y_2) = P(Y_1 \leq y_1 | Y_2 = y_2)$
-
-## Independent Random Variables
-
-If Y1 and Y2 are independent, the joint probability can be written as the product of the marginal probabilities: $F(y_1, y_2) = F_1(y_1)F_2(y_2)$.
-
-## Expected Value of a Function of Random Variables
-
-This is the same as in univariate situations, just multiply the variable value by the (density/mass/PDF/pmf) function.
-
-## Covariance and Correlation of Two Random Variables
-
-Covariance and Correlation are measures of dependency. The larger the covariance,
-the larger the correlation (zero covariance, zero correlation).
-
-If $Y_1, Y_2$ are random variables with means $\mu_1, \mu_2$, the covariance 
-is $Cov(Y_1, Y_2) = E (Y_1 − \mu_1)(Y_2 − \mu_2)]$.
-
-After some algebra, we can see that's also $E[XY] - E[X]E[Y]$.
-
-Positive covariance indicates proportionality; negative indicate inverse proportionality.
-
-Since covariance is hard to use, we often use the correlation coefficient instead:
-
-$\rho = \dfrac{Cov(Y_1,Y_2)}{\sigma_1 \sigma_2}$
 
 ## Moments
 

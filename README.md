@@ -1055,7 +1055,7 @@ $\Rightarrow \overline{x} \pm Z_{\alpha/2} * \dfrac{\sigma}{\sqrt{n}} = 1 - \alp
 >> This is also called a $100(1-\alpha)\%$ confidence interval for $\mu$.
 
 
-[Def] Confidence Interval
+[Def] Confidence Interval and eqns
 ---
 
 > When $\sigma$ is known, 
@@ -1068,9 +1068,41 @@ $(\overline{x} - Z_{\alpha/2} * \dfrac{\sigma}{\sqrt{n}}, \overline{x} + Z_{\alp
 
 $\overline{x} \pm Z_{\alpha/2} * \dfrac{\sigma}{\sqrt{n}} = 1 - \alpha$.
 
-> When $\sigma$ is unknown, 
+**Remember you can always replace $\sigma$ with $s$ to represent "sample std deviation."**
+This is very useful, since population standard deviations aren't always known, but
+sample ones almost always are. This is often called "large sample confidence" work,
+because it relies on $n>30$ to work.
 
-TODO.
+> When $\sigma$ is unknown and $n < 30$, use the t-distribution:
+
+$\overline{x} \pm t_{\alpha/2} * \dfrac{s}{\sqrt{n}} = 1 - \alpha$.
+
+Instead of "z critical scores" $Z_{\alpha/2}$, we will use $t_{\alpha/2}$.
+
+The t-distribution is not a normal distribution; since it uses small $n$ and 
+the sample standard deviation or error, this introduces less reliability, and 
+heavier tails.
+
+The t-distribution is controlled by parameter "degrees of freedom." This can be 
+notated $\nu$ or $df$.
+
+- When $\nu = 1$, the t-distribution becomes Cauchy with very heavy tails.
+- When $\nu \rightarrow \infty$, the t-distribution converges to the standard
+normal distribution, with very light tails.
+
+These principles are also related to kurtosis.
+
+> R code related to the t distribution:
+
+- $dt$ (PDF value),
+- $pt$ (CDF value), returns value to the left, or to the right if $pt(x, df, lower.tail = FALSE)$
+- $qt$ t-distribution's quantile. $qt(x, df)$, e.g. 
+
+    ```R
+    #find the t-score of the 99th quantile of the Student t distribution with df = 20
+    qt(.99, df = 20)
+    ```
+- $rt$ (ret value is vector of random variables).
 
 ---
 

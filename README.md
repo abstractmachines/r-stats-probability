@@ -1102,8 +1102,12 @@ These principles are also related to kurtosis.
     #find the t-score of the 99th quantile of the Student t distribution with df = 20
     qt(.99, df = 20)
     ```
+
+    Or better yet, $qt(1 - \dfrac{\alpha}{2}, df = n-1)$.
+
 - $rt$ (ret value is vector of random variables).
 
+For the t-distribution, we call these t-scores, not z-scores.
 ---
 
 > Confidence Interval Width: Why we sometimes choose $90\%$ over $99\%$

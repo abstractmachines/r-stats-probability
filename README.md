@@ -844,7 +844,7 @@ estimation functions, and so on, in order to estimate, and infer, data.
 When we create estimates they can be a scalar point estimate, or a prediction interval,
 e.g. a confidence interval.
 
-> Point Estimates
+### Point Estimates
 
 Notation: $\hat{\theta}$ is the "point estimator" of the parameter $\theta$.
 
@@ -945,8 +945,35 @@ probability, of being an estimator for $\theta$.
 That's it.
 
 
-> Confidence Intervals
+### Confidence Intervals
 
-TODO write, and finish, this section
+Confidence intervals are another way to obtain estimates. The confidence interval,
+or "interval estimator," is a rule by which we get the limits/endpoints. We desire:
 
+- A narrow interval;
+- That actually encloses the desired parameter, $\theta$.
 
+> Confidence coefficient
+
+Probability that a confidence interval will enclose the desired parameter $\theta$.
+
+Or, "the fraction of the time, with repeated sampling, that the interval contains
+ $\theta$", per Wackerley.
+
+A high confidence coefficient means, high confidence. Moving forward with sampling,
+we can be confident that our resulting confidence interval contains $\theta$.
+
+> Two sided confidence interval:
+
+Very similarly to real analysis and delta-epsilon infimum and supremum, let 
+the probability of the interval between lower limit $\hat{\theta}_L$, upper limit $\hat{\theta}_U$ be:
+
+$P(\hat{\theta}_L \leq \theta \leq \hat{\theta}_U) = 1 - \alpha$, with confidence coefficient $1 - \alpha$.
+
+$[\hat{\theta}_L, \hat{\theta}_U]$ is the resulting two sided confidence interval.
+
+> One sided confidence interval:
+
+Let $P(\hat{\theta}_L \leq \theta) = 1 - \alpha$, with implied one-sided CI of $(\hat{\theta}_L, \infty)$, or
+
+Let $P(\theta \leq \hat{\theta}_U) = 1 - \alpha$,  with implied one-sided CI of $(-\infty, \hat{\theta}_U)$.

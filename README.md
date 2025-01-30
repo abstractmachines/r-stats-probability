@@ -1021,15 +1021,15 @@ This will be similar. The quantity $Z = \dfrac{\hat{\theta} - \theta}{\sigma_{\h
 
 
 Let's look at our probability, by selecting tail area values
-of $\dfrac{Z\alpha}{2}$ and $-\dfrac{Z\alpha}{2}$. Then,
+of $Z_{\alpha/2}$ and $-Z_{\alpha/2}$. Then,
 
-$P(-\dfrac{Z\alpha}{2} \leq Z \leq \dfrac{Z\alpha}{2}) = 1 - \alpha$
+$P(-Z_{\alpha/2} \leq Z \leq Z_{\alpha/2}) = 1 - \alpha$
 
-$\Rightarrow P(-\dfrac{Z\alpha}{2} \leq \dfrac{\hat{\theta} - \theta}{\sigma_{\hat{\theta}}} \leq \dfrac{Z\alpha}{2}) = 1 - \alpha$
+$\Rightarrow P(-Z_{\alpha/2} \leq \dfrac{\hat{\theta} - \theta}{\sigma_{\hat{\theta}}} \leq Z_{\alpha/2}) = 1 - \alpha$
 
-$\Rightarrow P(-\dfrac{Z\alpha}{2} * \sigma_{\hat{\theta}} \leq \hat{\theta} - \theta \leq \dfrac{Z\alpha}{2} * \sigma_{\hat{\theta}}) = 1 - \alpha$
+$\Rightarrow P(-Z_{\alpha/2} * \sigma_{\hat{\theta}} \leq \hat{\theta} - \theta \leq Z_{\alpha/2} * \sigma_{\hat{\theta}}) = 1 - \alpha$
 
-$\Rightarrow P(\hat{\theta} -\dfrac{Z\alpha}{2} * \sigma_{\hat{\theta}} \leq \theta \leq \hat{\theta} + \dfrac{Z\alpha}{2} * \sigma_{\hat{\theta}}) = 1 - \alpha$
+$\Rightarrow P(\hat{\theta} -Z_{\alpha/2} * \sigma_{\hat{\theta}} \leq \theta \leq \hat{\theta} + Z_{\alpha/2} * \sigma_{\hat{\theta}}) = 1 - \alpha$
 
 Where our endpoints comprise the LHS and RHS of the inequality. This is quite abstract,
 so let's note that $\theta$ is the expected "population" value, and $\hat{\theta}$
@@ -1044,8 +1044,28 @@ of the population, $\sigma$. Well, that would be that of the sample, right? $\df
 
 Putting this all together, we have that
 
-$P(\overline{x} -\dfrac{Z\alpha}{2} * \dfrac{\sigma}{\sqrt{n}} \leq \mu \leq \overline{x} + \dfrac{Z\alpha}{2} * \dfrac{\sigma}{\sqrt{n}}) = 1 - \alpha$
+$P(\overline{x} -Z_{\alpha/2} * \dfrac{\sigma}{\sqrt{n}} \leq \mu \leq \overline{x} + Z_{\alpha/2} * \dfrac{\sigma}{\sqrt{n}}) = 1 - \alpha$
 
-$\Rightarrow \overline{x} \pm \dfrac{Z\alpha}{2} * \dfrac{\sigma}{\sqrt{n}} = 1 - \alpha$.
+$\Rightarrow \overline{x} \pm Z_{\alpha/2} * \dfrac{\sigma}{\sqrt{n}} = 1 - \alpha$.
 
 >> This is also called a $100(1-\alpha)\%$ confidence interval for $\mu$.
+
+
+[Def] Confidence Interval
+---
+
+> When $\sigma$ is known, 
+
+a $100(a-\alpha)\%$ confidence interval for the mean $\mu$ of a normal population, is,
+
+the point estimate of $\mu$, $\pm$ (z critical value)(standard error of the mean), or
+
+$(\overline{x} - Z_{\alpha/2} * \dfrac{\sigma}{\sqrt{n}}, \overline{x} + Z_{\alpha/2} * \dfrac{\sigma}{\sqrt{n}})$, e.g.
+
+$\overline{x} \pm Z_{\alpha/2} * \dfrac{\sigma}{\sqrt{n}} = 1 - \alpha$.
+
+> When $\sigma$ is unknown, 
+
+TODO.
+
+---

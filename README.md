@@ -1069,3 +1069,22 @@ $\overline{x} \pm Z_{\alpha/2} * \dfrac{\sigma}{\sqrt{n}} = 1 - \alpha$.
 TODO.
 
 ---
+
+> Confidence Interval Width: Why we sometimes choose $90\%$ over $99\%$
+
+Wider intervals are more reliable, but less precise; we desire narrow intervals
+whenever possible. For this reason, we often specify our desired CI and interval width,
+and our output is the required sample size for such a CI and interval width.
+
+(This is also reminiscent of the minimal variance theories of estimation).
+
+_The sample size required for the confidence interval to have width $w$ is:_
+
+$n = (2 Z_{\alpha/2}*\dfrac{\sigma}{\sqrt{}n})^2$.
+
+> Final notes on Confidence Intervals
+
+- According to the relative frequency viewpoint of probability, many experiments 
+need to be applied/performed. Can't just do one experiment and say that you have
+a $95\%$ confidence interval. That theory must be tested.
+

@@ -972,7 +972,7 @@ or "interval estimator," is a rule by which we get the limits/endpoints. We desi
 - A narrow interval;
 - That actually encloses the desired parameter, $\theta$.
 
-> Confidence coefficient
+> Confidence coefficient: "$1-\alpha$"
 
 Probability that a confidence interval will enclose the desired parameter $\theta$.
 
@@ -996,3 +996,44 @@ $[\hat{\theta}_L, \hat{\theta}_U]$ is the resulting two sided confidence interva
 Let $P(\hat{\theta}_L \leq \theta) = 1 - \alpha$, with implied one-sided CI of $(\hat{\theta}_L, \infty)$, or
 
 Let $P(\theta \leq \hat{\theta}_U) = 1 - \alpha$,  with implied one-sided CI of $(-\infty, \hat{\theta}_U)$.
+
+> Finding a confidence interval
+
+Recall the standard normal distribution axioms, distance from the mean in standard
+deviations was $z = \dfrac{y-\mu}{\sigma}$, the "standardized variable Y" is $\dfrac{Y-\mu}{\sigma}$.
+
+Subtracting $\mu$ "shifts the mean to zero". Dividing by $\sigma$ scales the variable
+s.t. the std deviation is 1 instead of $\sigma$.
+
+This will be similar. The quantity $Z = \dfrac{\hat{\theta} - \theta}{\sigma_{\hat{\theta}}}$ has a standard normal distribution.
+
+
+Let's look at our probability, by selecting tail area values
+of $\dfrac{Z\alpha}{2}$ and $-\dfrac{Z\alpha}{2}$. Then,
+
+$P(-\dfrac{Z\alpha}{2} \leq Z \leq \dfrac{Z\alpha}{2}) = 1 - \alpha$
+
+$\Rightarrow P(-\dfrac{Z\alpha}{2} \leq \dfrac{\hat{\theta} - \theta}{\sigma_{\hat{\theta}}} \leq \dfrac{Z\alpha}{2}) = 1 - \alpha$
+
+$\Rightarrow P(-\dfrac{Z\alpha}{2} * \sigma_{\hat{\theta}} \leq \hat{\theta} - \theta \leq \dfrac{Z\alpha}{2} * \sigma_{\hat{\theta}}) = 1 - \alpha$
+
+$\Rightarrow P(\hat{\theta} -\dfrac{Z\alpha}{2} * \sigma_{\hat{\theta}} \leq \theta \leq \hat{\theta} + \dfrac{Z\alpha}{2} * \sigma_{\hat{\theta}}) = 1 - \alpha$
+
+Where our endpoints comprise the LHS and RHS of the inequality. This is quite abstract,
+so let's note that $\theta$ is the expected "population" value, and $\hat{\theta}$
+is the "real value" or "estimator," and let's apply this.
+
+[EX] Let the parameter of interest, $\theta$, be population mean $\mu$.
+
+We know its estimator is the sample mean, $\overline{x}$. That means $\hat{\theta} = \overline{x}$.
+
+Now, regarding this: "$\sigma_{\hat{\theta}}$." This is the estimator for standard deviation
+of the population, $\sigma$. Well, that would be that of the sample, right? $\dfrac{\sigma}{\sqrt{n}}$.
+
+Putting this all together, we have that
+
+$P(\overline{x} -\dfrac{Z\alpha}{2} * \dfrac{\sigma}{\sqrt{n}} \leq \mu \leq \overline{x} + \dfrac{Z\alpha}{2} * \dfrac{\sigma}{\sqrt{n}}) = 1 - \alpha$
+
+$\Rightarrow \overline{x} \pm \dfrac{Z\alpha}{2} * \dfrac{\sigma}{\sqrt{n}} = 1 - \alpha$.
+
+>> This is also called a $100(1-\alpha)\%$ confidence interval for $\mu$.

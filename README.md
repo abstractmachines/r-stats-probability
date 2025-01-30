@@ -701,6 +701,18 @@ $pnorm(y_0, \mu, \sigma) \Rightarrow P(Y \leq Y_0)$
 
 $qnorm(p \mu, \sigma) \Rightarrow$ the pth quantile such that $P(Y \leq \phi_p) = p$.
 
+> Solving for the Normal Distribution in R
+
+```
+dnorm: density function of the normal distribution
+
+pnorm: cumulative density function of the normal distribution
+
+qnorm: quantile function of the normal distribution
+
+rnorm: random sampling from the normal distribution
+```
+
 ## Standard Normal Distribution
 
 This is the normal distribution, with param values $\mu = 0, \sigma = 1$.

@@ -1122,6 +1122,11 @@ _The sample size required for the confidence interval to have width $w$ is:_
 
 $n = (2 Z_{\alpha/2}*\dfrac{\sigma}{\sqrt{}n})^2$.
 
+Also, $w = \hat{\theta}_U - \hat{\theta}_L$. The width of the interval is difference of endpoints.
+
+Also, width is twice the margin of error, e.g. if "within 3 standard deviations,"
+then your margin of error is 3, and width is 6.
+
 > Final notes on Confidence Intervals
 
 - According to the relative frequency viewpoint of probability, many experiments 

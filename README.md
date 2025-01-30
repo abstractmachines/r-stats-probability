@@ -1133,3 +1133,11 @@ then your margin of error is 3, and width is 6.
 need to be applied/performed. Can't just do one experiment and say that you have
 a $95\%$ confidence interval. That theory must be tested.
 
+> Known critical values:
+
+$90\%$ CI: Two sided CV 1.64, one sided 1.28
+
+$95\%$ CI: Two sided CV 1.96, one sided 1.65
+
+$99\%$ CI: Two sided CV 2.58, one sided 2.33
+

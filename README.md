@@ -48,6 +48,7 @@ and other important concepts of combinatorics and statistics.
 - 2c. [Central Limit Theorem](#central-limit-theorem)
 3. [Moments](#moments)
 4. [Estimation: Statistical Inference (and Confidence Intervals)](#estimation-statistical-inference)
+5. [Significance Testing](#significance-testing)
 
 ##  Probability Definition
 
@@ -1141,3 +1142,4 @@ $95\%$ CI: Two sided CV 1.96, one sided 1.65
 
 $99\%$ CI: Two sided CV 2.58, one sided 2.33
 
+## Significance Testing

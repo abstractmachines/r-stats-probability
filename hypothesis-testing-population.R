@@ -1,4 +1,8 @@
 # hypothesis testing for population proportion
+
+# prop.test will provide p-values to compare with signifiance level
+# such that we are informed whether to reject the null hypothesis.
+
 # continuity correction, the last argument, is default true;
 # use this for small sample tests in hypothesis testing (binomial).
 # Here, n > 30 by far. so, large sample testing, w/ last arg, false.

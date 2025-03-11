@@ -1203,3 +1203,20 @@ or significance level $\alpha$.
 • p-value $< \alpha \Rightarrow$ reject $H_0$.
 
 • p-value $\geq \alpha \Rightarrow$ do not reject $H_0$. 
+
+> One sample t test
+
+$t.test()$ for t distributions. For z distributions, that is going to be a lot of
+data so we tend to not write out all the samples individually in R, and also
+there appears to be no equivalent builtin for the same reason, so for z-dist,
+find z scores automatically and then find p values with $pnorm()$.
+
+> Testing a population proportion, or percentage; "large sample z-test"
+
+Test statistic: $z = \dfrac{\hat{p} - p_0}{\sqrt{\dfrac{p_0(1-p_0}{n}}}$,
+
+where $\hat{p} = \dfrac{82}{n}$ where 82 = sample "success."
+
+Use $prop.test()$ for this for a "one sample population proportion z-test."
+
+> Large sample test: need $np \geq 10, nq \geq 10$.

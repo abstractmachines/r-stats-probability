@@ -14,7 +14,7 @@ print(t_test_statistic) # 3.25
 # then the test statistic of 3.25 hits within that rejection region for H0,
 # we then reject the null hypothesis of H0.
 
-# pt() computes a CDF in R. CDF's are naturally right tailed, P(Y <= x).
+# pt() computes a CDF in R. CDF's are naturally left tailed, P(Y <= x).
 # this is a right tailed test, so
 p_value <- pt(3.25,df = n-1, lower.tail = FALSE)
 # pt() last argument determines whether lower tail or not.

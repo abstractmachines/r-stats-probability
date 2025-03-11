@@ -1144,6 +1144,60 @@ $99\%$ CI: Two sided CV 2.58, one sided 2.33
 
 ## Significance or Hypothesis Testing
 
-The hypothesis test is about the population mean $\mu$, which represents the true average estimated calorie content for all individuals in the population (not just the people sampled).
+The hypothesis test is about the population mean $\mu$, which represents the "true" average estimated calorie content for all individuals in the population (not just the people sampled).
 
 For more information see hypothesis testing R code samples.
+
+$H_0$, the null hypothesis, is the conservative, "tried and true" value or finding. This is usually from the population statistic, such as $\mu$.
+
+The alternative "researcher's" hypothesis is $H_a > 158$, and is generally
+"what the researcher wants to prove," or a theory of sorts.
+
+"Significance testing", denoted $\alpha$, is a way to tell whether a change has the intended consequence.
+Significance levels are usually $0.05, 0.01, 0.001$ for most common values.
+
+The general way to do hypothesis testing is:
+
+• Define hypotheses $H_0$, $H_a$;
+
+• Set up a threshold, significance level;
+
+• Take a sample;
+
+• That sample gives us **test statistics** from the sample $\overline{x}, s, $ etc.
+
+    Where our test statistic is either z test (normally distributed) or t test:
+
+    Recall that z-test is for approximately normally distributed samples with $n > 30$,
+    and $\sigma$ pop std dev known, e.g. the z-distribution;
+
+    t-test is for $n < 30$ and/or when $\sigma$ unknown; t-distribution.
+
+$z = \dfrac{\overline{x} - \mu}{\dfrac{\sigma}{\sqrt{n}}}$ or $t = \dfrac{\overline{x} - \mu}{\dfrac{s}{\sqrt{n}}}$
+
+• Set up the rejection region for $H_0$ via critical values:
+
+($qnorm()$ for z distribution, $qt()$ for t distribution).
+
+• See if our **test statistic** hits inside or outside the rejection region for $H_0$.
+
+    This informs whether to reject the null hypothesis.
+
+• See if our **p-values** are greater or less than significance levels.
+
+($pnorm()$ for z distribution, $pt()$ for t distribution).
+
+P-values are a probability that we would get the statistics we got, if $H_0$ were true.
+
+For example, if our test statistic hits inside a rejection region for $H_0$,
+YET $H_0$ is true, how likely is that?
+
+A high p-value would mean, very likely. This means that getting the "wrong answer"
+is likely with this particular distribution. This indicates _high variance._
+
+So the test for p values is to test that probability against the threshold,
+or significance level $\alpha$.
+
+• p-value $< \alpha \Rightarrow$ reject $H_0$.
+
+• p-value $\geq \alpha \Rightarrow$ do not reject $H_0$. 

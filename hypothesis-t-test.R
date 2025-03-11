@@ -14,10 +14,17 @@ print(t_test_statistic) # 3.25
 # then the test statistic of 3.25 hits within that rejection region for H0,
 # we then reject the null hypothesis of H0.
 
+# pt() computes a CDF in R. CDF's are naturally right tailed, P(Y <= x).
 # this is a right tailed test, so
 p_value <- pt(3.25,df = n-1, lower.tail = FALSE)
-print(p_value)
+# pt() last argument determines whether lower tail or not.
+print(p_value) # p-value of 0.0009 < alpha = 0.001 -> reject null hypothesis.
 
-# p value for t dist is very low at 0.0022,
+# more detailed semantics include:
+# p value for t dist is very low at 0.0009,
 # so the probability of getting values that conflict with H_0 IF H_0 true,
-# would be odd as this distribution would have little variance.
+# would be very low.
+
+# experiment with pt() CDF: left tailed by default, like a CDF of P(Y <= x):
+pt(3.25,df = n-1, lower.tail = TRUE)
+pt(3.25,df = n-1)

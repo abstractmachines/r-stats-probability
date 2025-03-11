@@ -1156,6 +1156,8 @@ The alternative "researcher's" hypothesis is $H_a > 158$, and is generally
 "Significance testing", denoted $\alpha$, is a way to tell whether a change has the intended consequence.
 Significance levels are usually $0.05, 0.01, 0.001$ for most common values.
 
+Assuming $\alpha = 0.05$ because "strong evidence" is common.
+
 The general way to do hypothesis testing is:
 
 • Define hypotheses $H_0$, $H_a$;

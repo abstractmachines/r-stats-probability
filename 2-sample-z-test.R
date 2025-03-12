@@ -10,8 +10,8 @@ print(z_test_statistic) # -1.780316
 alpha <- 0.1
 two_tailed <- alpha/2
 qnorm(1-two_tailed) # 1.644854
-# z test statistic does not fall within the rejection regions above 1.78, below -1.78
-# fail to reject H0, probably
+# z test stat -1.78 does fall within the rejection regions above 1.644, below -1.644 
+# reject H0, probably
 
 # p values, two-tailed:
 2*pnorm(z_test_statistic) # 0.07502432 = p-value < alpha = 0.1 -> reject H0

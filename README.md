@@ -52,7 +52,7 @@ and other important concepts of combinatorics and statistics.
 -- Part Three: Significance / Hypothesis Testing --
 
 1. [Significance or Hypothesis Testing](#significance-or-hypothesis-testing)
-2. [Hypothesis Testing and Inferences Based on Two Samples: Means and Proportions](#hypothesis-testing-and-inferences-based-on-two-samples-means-and-proportions)
+2. [Hypothesis Testing and Inferences Based on Two Populations: Means and Proportions](#hypothesis-testing-and-inferences-based-on-two-populations-means-and-proportions)
 
 ##  Probability Definition
 
@@ -1225,7 +1225,7 @@ Use $prop.test()$ for this for a "one sample population proportion z-test."
 
 > Large sample test: need $np \geq 10, nq \geq 10$.
 
-## Hypothesis Testing and Inferences Based on Two Samples: Means and Proportions
+## Hypothesis Testing and Inferences Based on Two Populations: Means and Proportions
 
 Inferences based on two samples usually happen via means ($\mu, \overline{x}$),
 and population proportions.

@@ -1232,7 +1232,7 @@ and population proportions.
 
 - Two sample t test: see R code;
 The test statistic is 
-$t = \dfrac{\overline{x} - \overline{y}}{\sqrt{\dfrac{s_1^2}{m} + \dfrac{s_2^2}{n}}}$
+$t = \dfrac{(\overline{x} - \overline{y}) - \Delta}{\sqrt{\dfrac{s_1^2}{m} + \dfrac{s_2^2}{n}}}$, where $\Delta = 0$ is used if working with the hypothesis that $\mu1 = \mu2$.
 
 ```R
 # welch's t-test, denoted by last argument of var.equal=false, does not assume
@@ -1245,7 +1245,7 @@ t.test(h,p, var.equal = FALSE)
 
 $(\overline{x} - \overline{y}) \pm t_{\alpha/2, df * \sqrt{\dfrac{s_1^2}{m} + \dfrac{s_2^2}{n}}}$ with approximately normal distribution
 
-> Paired data:
+> Paired data: use $t.test()$
 
 For matching "paired data," what that really means is sampling the same _thing_,
 but in different ways. So instead of the "two objects" or "two samples" usually

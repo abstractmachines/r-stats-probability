@@ -48,7 +48,11 @@ and other important concepts of combinatorics and statistics.
 - 2c. [Central Limit Theorem](#central-limit-theorem)
 3. [Moments](#moments)
 4. [Estimation: Statistical Inference (and Confidence Intervals)](#estimation-statistical-inference)
-5. [Significance or Hypothesis Testing](#significance-or-hypothesis-testing)
+
+-- Part Three: Significance / Hypothesis Testing --
+
+1. [Significance or Hypothesis Testing](#significance-or-hypothesis-testing)
+2. [Hypothesis Testing and Inferences Based on Two Samples: Means and Proportions](#hypothesis-testing-and-inferences-based-on-two-samples-means-and-proportions)
 
 ##  Probability Definition
 
@@ -1220,3 +1224,29 @@ where $\hat{p} = \dfrac{82}{n}$ where 82 = sample "success."
 Use $prop.test()$ for this for a "one sample population proportion z-test."
 
 > Large sample test: need $np \geq 10, nq \geq 10$.
+
+## Hypothesis Testing and Inferences Based on Two Samples: Means and Proportions
+
+Inferences based on two samples usually happen via means ($\mu, \overline{x}$),
+and population proportions.
+
+- Two sample t test: see R code
+
+```R
+# welch's t-test, denoted by last argument of var.equal=false, does not assume
+# equivalent variance for the two samples.
+
+t.test(h,p, var.equal = FALSE)
+```
+
+- Paired t test: See R code, and also,
+
+The t-statistic for a paired t-test is $t = \dfrac{\overline{d}}{Sd/\sqrt{n}}$ where $\overline{d}$ is the differences mean, $Sd$ is the differences std deviation.
+
+- 2 sample, large sample Z test: when $\sigma$ known, and approximately normal distribution,
+
+Z test statistic is $z = \dfrac{\overline{x} - \overline{y}}{\sqrt{\dfrac{\sigma^2}{xn} + \dfrac{\sigma^2}{yn}}}$
+
+- Two-proportion population large sample test:
+
+test statistic is $z = \dfrac{\hat{p_1} - \hat{p_2}}{\sqrt{\hat{p}\hat{q}(\dfrac{1}{m}+\dfrac{1}{n})}}$,

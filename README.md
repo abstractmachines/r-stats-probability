@@ -1239,6 +1239,16 @@ and population proportions.
 t.test(h,p, var.equal = FALSE)
 ```
 
+> Paired data:
+
+For matching "paired data," what that really means is sampling the same _thing_,
+but in different ways. So instead of the "two objects" or "two samples" usually
+discussed in two-sample hypothesis testing, we have two samples of the same thing.
+
+Equations for most "2 sample" problems involve independent sets of data, but in 
+paired testing, e.g. duplicate of same "object", there's dependence,
+so we use different equations generally called "paired t testing."
+
 - Paired t test: See R code, and also,
 
 The t-statistic for a paired t-test is $t = \dfrac{\overline{d}}{Sd/\sqrt{n}}$ where $\overline{d}$ is the differences mean, $Sd$ is the differences std deviation.

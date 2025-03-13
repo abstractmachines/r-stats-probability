@@ -4,3 +4,5 @@
 
 # df_treatment = I - 1
 # df_error = IJ - 1
+
+pf()

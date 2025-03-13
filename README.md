@@ -54,6 +54,10 @@ and other important concepts of combinatorics and statistics.
 1. [Significance or Hypothesis Testing](#significance-or-hypothesis-testing)
 2. [Hypothesis Testing and Inferences Based on Two Populations: Means and Proportions](#hypothesis-testing-and-inferences-based-on-two-populations-means-and-proportions)
 
+-- Part Four: The Analysis of Variance --
+
+1. [ANOVA](#analysis-of-variance-anova)
+
 ##  Probability Definition
 
 [Probability](https://en.wikipedia.org/wiki/Probability) is the likelihood that an event will occur.
@@ -1265,4 +1269,14 @@ Z test statistic is $z = \dfrac{\overline{x} - \overline{y}}{\sqrt{\dfrac{\sigma
 
 - Two-proportion population large sample test:
 
-test statistic is $z = \dfrac{\hat{p_1} - \hat{p_2}}{\sqrt{\hat{p}\hat{q}(\dfrac{1}{m}+\dfrac{1}{n})}}$,
+test statistic is $z = \dfrac{\hat{p_1} - \hat{p_2}}{\sqrt{\hat{p}\hat{q}(\dfrac{1}{m}+\dfrac{1}{n})}}$
+
+## Analysis of Variance (ANOVA)
+
+ANOVA, which stands for Analysis of Variance, is a statistical test used to analyze the difference between the means of more than two groups. A one-way ANOVA uses one independent variable, while a two-way ANOVA uses two independent variables.
+
+```R
+# 1-sided ANOVA p-value:
+pf(test_stat,df1 = df_treatment, df2 = df_error, lower.tail = FALSE)
+# always right tailed for one-sided ANOVA.
+```

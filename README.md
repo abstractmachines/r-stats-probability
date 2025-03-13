@@ -1230,7 +1230,9 @@ Use $prop.test()$ for this for a "one sample population proportion z-test."
 Inferences based on two samples usually happen via means ($\mu, \overline{x}$),
 and population proportions.
 
-- Two sample t test: see R code
+- Two sample t test: see R code;
+The test statistic is 
+$t = \dfrac{\overline{x} - \overline{y}}{\sqrt{\dfrac{s_1^2}{m} + \dfrac{s_2^2}{n}}}$
 
 ```R
 # welch's t-test, denoted by last argument of var.equal=false, does not assume
@@ -1238,6 +1240,10 @@ and population proportions.
 
 t.test(h,p, var.equal = FALSE)
 ```
+
+- Two-sample t confidence interval:
+
+$(\overline{x} - \overline{y}) \pm t_{\alpha/2, df * \sqrt{\dfrac{s_1^2}{m} + \dfrac{s_2^2}{n}}}$ with approximately normal distribution
 
 > Paired data:
 
@@ -1255,7 +1261,7 @@ The t-statistic for a paired t-test is $t = \dfrac{\overline{d}}{Sd/\sqrt{n}}$ w
 
 - 2 sample, large sample Z test: when $\sigma$ known, and approximately normal distribution,
 
-Z test statistic is $z = \dfrac{\overline{x} - \overline{y}}{\sqrt{\dfrac{\sigma^2}{xn} + \dfrac{\sigma^2}{yn}}}$
+Z test statistic is $z = \dfrac{\overline{x} - \overline{y}}{\sqrt{\dfrac{\sigma^2}{m} + \dfrac{\sigma^2}{n}}}$
 
 - Two-proportion population large sample test:
 

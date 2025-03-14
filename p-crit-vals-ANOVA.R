@@ -6,8 +6,15 @@
 # df_error = IJ - 1
 
 alpha <- 0.05
-pf(5.04,df1 = 2, df2 = 15, lower.tail = FALSE)
 
-qf(1-alpha,2,17)
+#p-value:
+pf(5.04,df1 = 2, df2 = 15, lower.tail = FALSE) # 0.0212
+
+# critical values
+qf(1-alpha,2,17) # 3.59; 1 way ANOVA is right tailed only;
+
+# test statistic 5.04 does hit within rejection region (greater than 3.59);
+
+# Reject H0.
 
 

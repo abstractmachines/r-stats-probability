@@ -1276,7 +1276,14 @@ test statistic is $z = \dfrac{\hat{p_1} - \hat{p_2}}{\sqrt{\hat{p}\hat{q}(\dfrac
 ANOVA, which stands for Analysis of Variance, is a statistical test used to analyze the difference between the means of more than two groups. A one-way ANOVA uses one independent variable, while a two-way ANOVA uses two independent variables.
 
 ```R
-# 1-sided ANOVA p-value:
+# 1-sided "single factor" ANOVA p-value:
 pf(test_stat,df1 = df_treatment, df2 = df_error, lower.tail = FALSE)
 # always right tailed for one-sided ANOVA.
+
+# and, critical values (alpha = 0.05 default):
+qf(1-alpha, dfTr, dfError)
+
+# as usual, if p < alpha, reject H0, and check critical vals too.
 ```
+
+TODO ANOVA table:

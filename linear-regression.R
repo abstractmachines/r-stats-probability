@@ -11,3 +11,5 @@ lm(x~y)
 summary(lm(y~x))
 
 anova(lm(y~x)) # p -value = 0.03969 < alpha = 0.05 -> Reject H0
+
+plot(x,y)

@@ -58,6 +58,10 @@ and other important concepts of combinatorics and statistics.
 
 1. [ANOVA](#analysis-of-variance-anova)
 
+-- Part Five: Linear Regression -- 
+
+1. [Linear Regression](#linear-regression)
+
 ##  Probability Definition
 
 [Probability](https://en.wikipedia.org/wiki/Probability) is the likelihood that an event will occur.
@@ -1287,3 +1291,7 @@ qf(1-alpha, dfTr, dfError)
 ```
 
 TODO ANOVA table:
+
+## Linear Regression
+
+TODO. See R code for now :)

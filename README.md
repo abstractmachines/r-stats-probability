@@ -490,6 +490,16 @@ $\sigma^2 = \int_{-\infty}^{\infty} (x-\mu)^2 * f(x) dx = E[(X-\mu)^2]$
 
 ## Cumulative Distribution Function (CDF)
 
+Cumulative distribution just means cumulative up to X, or $P(X \leq x)$.
+
+So CDFs can be for discrete or random variables.
+
+The CDF for a discrete random variable is a difference:
+
+$F(x) = P(a < X \leq x) \Rightarrow F(b) - F(a)$, and
+
+$F(x) = P(a \leq X \leq x) \Rightarrow F(b) - F(a) + p(a)$.
+
 The CDF for a continuous random variable $X$ is:
 
 $F(x) = P(X \leq x) = \int_{-\infty}^x f(y) dy$. For each $x$, $F(x)$ is the area under the density curve to the left of $x$.

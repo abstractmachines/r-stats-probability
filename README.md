@@ -502,7 +502,9 @@ $F(x) = P(a \leq X \leq x) \Rightarrow F(b) - F(a) + p(a)$.
 
 The CDF for a continuous random variable $X$ is:
 
-$F(x) = P(X \leq x) = \int_{-\infty}^x f(y) dy$. For each $x$, $F(x)$ is the area under the density curve to the left of $x$.
+$F(x) = P(a \leq Y \leq b) = \int_{a}^b f(y) dy \Rightarrow F(b) - F(a)$.
+
+For each $x$, $F(x)$ is the area under the density curve to the left of $x$.
 
 > Using $F(x) to compute probabilities:
 

@@ -259,7 +259,7 @@ Bernoulli random variables, or distributions, are considered the simplest. This 
 
 - PMF: $f(x;p) = p$ if success, $f(x;p) = 1-p = q$ if failure.
 
-- Mean: $\mu = 1-p$
+- Mean: $\mu = p$
 
 - Variance: $\sigma^2 = p(1-p) \Rightarrow pq$
 

@@ -90,6 +90,32 @@ $P(B) = P(B|A)P(A) + P(B|A\prime)P(A\prime) + P(B|C)P(C) ...$
 
 $P(A|B) = \dfrac{P(A \cap B)}{P(B)}$
 
+> Complement of Conditional Probability: _"change the first one"_
+
+$(P(A|B))' = P(A'|B)$
+
+> Bayesian Probability:
+
+$P(A|B) = \dfrac{P(B|A)P(A)}{P(B)}$
+
+> _"Proof": Bayesian algebraic derivation from conditional probability law:_
+
+We know that:
+
+$P(A|B) = \dfrac{P(A \cap B)}{P(B)}$, and it follows that
+
+$P(A \cap B) = P(A|B)P(B)$. Similarly,
+
+$P(B|A) = \dfrac{P(B \cap A)}{P(A)} \Rightarrow P(B \cap A) = P(B|A)P(A)$.
+
+Since $P(A \cap B) = P(B \cap A)$, then $P(A|B)P(B) = P(B|A)P(A)$. So,
+
+$P(A|B)P(B) = P(B|A)P(A)$
+
+$\Rightarrow P(A|B) = \dfrac{P(B|A)P(A)}{P(B)}$.
+
+
+
 > Independent Events:
 
 $P(A|B) = P(A)$, and/or if $A \cap B = \emptyset \Rightarrow P(A \cap B) = P(A)P(B)$.

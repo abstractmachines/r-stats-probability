@@ -284,6 +284,55 @@ $\sigma^2 = npq$
 Binomial is said to use Bernoulli random variables, which are basically just binary,
 "zero-sum" types variables (win lose, 0 1, etc).
 
+### SOA 351 "difficulty 6.45" problem walkthrough*:
+
+*This problem, and solution, is avail publicly on SOA sample problems and solutions.
+
+I've rephrased the problem's solution "in words:"
+
+<div style="border: 2px solid grey; padding: 10px; border-radius: 5px;">
+
+> "Binomial notation in words: SOA Exam P 351 rephrased"
+
+$\Rightarrow {Red \choose accidents} p_{accidents}^x * q^{n-x}$,
+
+> where "red" refers to the "red-and-black" Bernoulli logic ("win/lose", "red/black", "high/low").
+
+The ask is:
+
+**$P(one or more) = 1 - P(at most one) \Rightarrow 1 - P(0) + P(1)$.**
+
+> "AND" = multiply. "OR" = add.
+
+$P(0)$ = P(High = 0 acc AND (multiply) low = 0 acc): 
+
+${High = 2 \choose Accidents = 0} 0.4^0*0.6^2$ * 
+
+${Low = 2 \choose Accidents = 0} 0.1^0*0.9^2$ 
+
+$ = 0.2916$;
+
+**Then, $P(1)$ = P(High 1 AND Low 0 OR (+) P High 0 AND Low 1):**
+
+**P(High 1 AND Low 0) = 0.3888$:**
+
+${High = 2 \choose Accidents = 1} 0.4^1*0.6^1$ * 
+
+${Low = 2 \choose Accidents = 0} 0.1^0*0.9^2$ 
+
+$ = 0.3888$.
+
+**P(High 0 AND Low 1) = 0.0648$:**
+
+${High = 2 \choose Accidents = 0} 0.4^0*0.6^2$ * 
+
+${Low = 2 \choose Accidents = 1} 0.1^1*0.9^1$ 
+
+$ = 0.0648$.
+
+So, $0.3888 + 0.0648 + 0.2916 = 0.7452$.
+</div>
+
 ## Bernoulli Random Variables and Distributions
 
 The Bernoulli distribution is considered a special case of the binomial distribution, with $n = 1$.

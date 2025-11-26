@@ -255,6 +255,10 @@ Probability mass functions will depend on the particular problem you're trying t
 
 ## Binomial Probability Distribution
 
+> "IDD": "Independent and Identially Distributed",
+
+where "identically distributed" means equiprobable outcomes.
+
 The binomial distribution is *identical, independent* trials. These are uniform experiments of a series of failures and successes, for example $\{F,F,F,F,S,F,S,F...\}$; the random variable for the binomial distribution counts the number of successes in each trial.
 
 > Distribution:
@@ -276,6 +280,9 @@ for $x = 0,1,2....$ (and $0$ otherwise).
 $\mu = E(Y) = np$
 
 $\sigma^2 = npq$
+
+Binomial is said to use Bernoulli random variables, which are basically just binary,
+"zero-sum" types variables (win lose, 0 1, etc).
 
 ## Bernoulli Random Variables and Distributions
 

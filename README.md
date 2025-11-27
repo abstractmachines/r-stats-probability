@@ -428,6 +428,39 @@ The Poisson probability distribution, used for rare events over a period of time
 
 The Poisson distribution's probability function is $p(y) = \dfrac{\lambda^y}{y!}e^{-y}$, with $\mu = \lambda$, $\sigma^2 = \lambda$, and hence $\sigma = \sqrt{\lambda}$.
 
+The Poisson distribution is very common on the exam because the sums are easy to 
+work with, so there are axioms about the sums of independent Poissons, such as:
+
+"The mean of two independent Poisson variables is the sum of their means," and so on.
+
+> A few Poisson axioms:
+- $E[X+Y] = E[X] + E[Y]$
+
+- $VAR[X + Y] = VAR[X] + VAR[Y]$.
+
+- "everything's $\lambda$."
+
+> An example:
+
+Let two independent Poisson RV's X, Y, s.t. $E[X] = 3, E[Y] = 2$, and find
+$P[X = 2 | X+Y = 4]$.
+
+So using conditional probability, $P[X = 2 | X+Y = 4] = \dfrac{P[X = 2 \cap X + Y = 4]}{P[X+Y = 4]}$,
+
+and $\dfrac{P[X = 2 \cap X = Y = 4]}{P[X+Y = 4]} = \dfrac{P[X = 2 \cap Y = 2]}{P[X+Y = 4]}$,
+
+by independence, $\Rightarrow \dfrac{P[X = 2] \times P[Y = 2]}{P[X+Y = 4]}$.
+
+For the denominator, to find $P[X+Y = 4]$, we want the specific poisson $\lambda$ for that.
+
+Recall that the mean of 2 independent Poisson variables is the sum of their means, so,
+
+$\lambda_{X+Y} = E[X+Y] = E[X] + E[Y] \Rightarrow 3 + 2 = 5 \Rightarrow \mu \Rightarrow \lambda$,
+
+so for denominator, we have $\lambda = 5, X = 4$.
+
+Thusly, we get $\dfrac{\frac{3^2}{2!} e^{-3} \frac{2^2}{2!} e^{-2}}{\frac{5^4}{4!} e^{-5}}$, then we solve.
+
 ## Continuous Random Variables
 
 Continuous random variables are defined on a continuum, e.g. an interval.

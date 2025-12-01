@@ -625,7 +625,7 @@ For each $x$, $F(x)$ is the area under the density curve to the left of $x$.
 
 Let $X$ be a continuous random variable with PDF = $f(x)$, CDF = $F(x)$.
 
-Then, $\forall a, P(X > a) = 1 - F(a)$, and
+Then, $\forall a, P(X > a) = 1 - F(a)$, aka the "survival function," and
 
 $\forall a, b, a < b, P(a \leq X \leq b) = F(b) - F(a)$.
 
